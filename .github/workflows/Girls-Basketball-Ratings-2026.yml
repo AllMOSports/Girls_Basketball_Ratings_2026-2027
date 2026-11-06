@@ -1,0 +1,156 @@
+# Started by cron-job.org via GitHub's API (workflow_dispatch), because
+# GitHub's own schedule was starting these runs hours late.
+# The "Run workflow" button in the Actions tab still works too.
+#
+# cron-job.org: point a NEW job at this file's name
+# (.../actions/workflows/Girls-Basketball-Ratings-2026.yml/dispatches).
+# Suggested time ~3:07 AM Central so it doesn't overlap the boys basketball
+# or fall sports runs (spreads out the MSHSAA requests).
+name: Girls Basketball 2026-27 (games, schedule, ratings)
+
+on:
+  workflow_dispatch:            # manual runs still work any time
+
+permissions:
+  contents: write
+
+concurrency:
+  group: girls-basketball-ratings-2026
+  cancel-in-progress: false
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          # Only matters if a GitHub `schedule:` trigger is ever added back.
+          # Basketball runs Nov-Mar, so the month field covers 11,12,1,2,3.
+          ZONE=$(TZ=America/Chicago date +%Z)
+          RUN=false
+          if [ -z "$SCHEDULE" ]; then
+            RUN=true                                   # manual / cron-job.org run
+          elif [ "$SCHEDULE" = "7 8 * 11,12,1,2,3 *" ] && [ "$ZONE" = "CDT" ]; then
+            RUN=true
+          elif [ "$SCHEDULE" = "7 9 * 11,12,1,2,3 *" ] && [ "$ZONE" = "CST" ]; then
+            RUN=true
+          fi
+          echo "Chicago is on $ZONE; trigger '${SCHEDULE:-manual}' -> run=$RUN"
+          echo "run=$RUN" >> "$GITHUB_OUTPUT"
+
+  ratings:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 pandas pillow fonttools brotli numpy
+
+      - name: Check required input files
+        run: |
+          for f in classifications.json mshsaa_schools.csv; do
+            if [ ! -f "$f" ]; then
+              echo "::error::Missing $f in repo root"
+              exit 1
+            fi
+          done
+
+      - name: Scrape, build schedule, run ratings
+        run: python Girls_Basketball_Ratings_2026.py | tee ratings_log.txt
+
+      - name: Flag teams not in ratings
+        if: always()
+        run: |
+          if grep -q "TEAMS NOT INCLUDED IN RATINGS" ratings_log.txt; then
+            echo "::warning::Some classification teams are not in the ratings -- see run log"
+            sed -n '/TEAMS NOT INCLUDED IN RATINGS/,/^=====/p' ratings_log.txt >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      # Size-adjusted ("per capita") rankings from the fresh ratings.
+      # Needs build_per_capita_2026.py + mshsaa_enrollments_2026-2027.json in
+      # the repo root. Skipped quietly before the first ratings exist.
+      - name: Build size-adjusted rankings
+        continue-on-error: true
+        run: |
+          if [ -f girls_basketball_ratings_2026.json ]; then
+            python build_per_capita_2026.py --sport girls_basketball
+          else
+            echo "No girls_basketball_ratings_2026.json yet -- skipping."
+          fi
+
+      # Size-adjusted Top 10 graphic -> graphics/size_adjusted_rankings_girls_basketball_2026.png
+      - name: Build size-adjusted rankings graphic
+        continue-on-error: true
+        run: |
+          if [ -f per_capita_girls_basketball_2026.json ]; then
+            python build_per_capita_graphic_2026.py --sport girls_basketball
+          else
+            echo "No per_capita_girls_basketball_2026.json -- skipping graphic."
+          fi
+
+      # Rankings graphics (statewide + each class). Skipped until the
+      # basketball graphics script is in the repo.
+      - name: Build rankings graphics
+        continue-on-error: true
+        run: |
+          if [ -f Girls_Basketball_Graphics_2026.py ] && [ -f girls_basketball_ratings_2026.json ]; then
+            python Girls_Basketball_Graphics_2026.py
+          else
+            echo "Graphics script or ratings not present yet -- skipping."
+          fi
+
+      # Matchup Previews data (matchup_previews_girls_basketball_2026.json) from the
+      # fresh ratings and games. Reads public All_MO_Sports-Data files from GitHub
+      # raw. Needs ratings, so it skips until the first completed games.
+      - name: Build matchup previews
+        continue-on-error: true
+        run: |
+          if [ -f build_matchup_previews_girls_basketball_2026.py ] && [ -f girls_basketball_ratings_2026.json ]; then
+            python build_matchup_previews_girls_basketball_2026.py
+          else
+            echo "Previews script or ratings not present yet -- skipping."
+          fi
+
+      - name: Commit and push outputs
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          # Ratings + rankings (absent until the first completed games)
+          git add girls_basketball_ratings_2026*.json \
+                  girls_basketball_rankings_2026_*.csv \
+                  girls_basketball_scoreboard_2026.csv 2>/dev/null || true
+          # Games + schedule files
+          git add girls_basketball_games_2026.json girls_basketball_games_2026.csv \
+                  girls_basketball_games_2026_all.json girls_basketball_games_2026_all.csv \
+                  girls_basketball_schedule_2026.json girls_basketball_schedule_2026.csv \
+                  girls_basketball_missing_scores_2026.csv 2>/dev/null || true
+          # Size-adjusted rankings (skipped quietly if that step failed)
+          git add per_capita_girls_basketball_2026.json per_capita_girls_basketball_2026.csv 2>/dev/null || true
+          # Matchup previews (skipped quietly if that step failed)
+          git add matchup_previews_girls_basketball_2026.json 2>/dev/null || true
+          # Graphics (+ fonts, in case they were downloaded this run)
+          git add graphics/*.png 2>/dev/null || true
+          git add fonts/*.ttf 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Update Girls Basketball 2026 games, schedule, ratings, per capita, graphics, matchup previews ($(date -u +'%Y-%m-%d'))"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
