@@ -88,13 +88,13 @@ SPORTS = {
     },
     "boys_basketball": {
         "label": "Boys Basketball",
-        "repo": "Boys_Basketball_Ratings_2026",
+        "repo": "Boys_Basketball_Ratings_2026-2027",
         "ratings_file": "boys_basketball_ratings_2026.json",
         "private_factor": "auto",
     },
     "girls_basketball": {
         "label": "Girls Basketball",
-        "repo": "Girls_Basketball_Ratings_2026",
+        "repo": "Girls_Basketball_Ratings_2026-2027",   # confirm repo name
         "ratings_file": "girls_basketball_ratings_2026.json",
         "private_factor": "auto",
     },
