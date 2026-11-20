@@ -103,7 +103,7 @@ MOV_CAP               = 25    # a single game can contribute at most 25 points o
 # with no 2025-26 rating (new co-ops, new schools) start at their 2026-27 class
 # average. Teams with fewer than MIN_GAMES_SHOWN games are left out of the
 # ratings/rankings files, but still get projected scores on the schedule.
-PRIOR_URL        = "https://raw.githubusercontent.com/AllMOSports/Girls_Basketball_Ratings_2025-2026/main/ratings.json"
+PRIOR_URL        = "https://raw.githubusercontent.com/AllMOSports/Girls_Basketball_Ratings_2025-2026/main/girls_basketball_ratings_2025.json"
 PRIOR_LOCAL_PATH = "girls_basketball_ratings_2025_final.json"   # optional local copy; used first if present
 PRIOR_KEEP       = 0.67
 BLEND_FULL_GAMES = 8
