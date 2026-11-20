@@ -94,6 +94,30 @@ COMPETITIVE_THRESHOLD = 30    # half-weight at a 30-point combined rating gap
 REGULARIZATION_K      = 3.0   # pseudo-games added to every team's denominator
 MOV_CAP               = 25    # a single game can contribute at most 25 points of error
 
+# --- Early-season blend with last season (2025-26) ---
+# Until a team has played BLEND_FULL_GAMES rated games, its OFF and DEF are a
+# mix of this season's fit and last season's final ratings:
+#     weight on this season = games played / BLEND_FULL_GAMES (capped at 1)
+#     2025-26 rating used   = final 2025-26 rating x PRIOR_KEEP
+# PRIOR_KEEP < 1 pulls last season toward average (seniors graduate). Teams
+# with no 2025-26 rating (new co-ops, new schools) start at their 2026-27 class
+# average. Teams with fewer than MIN_GAMES_SHOWN games are left out of the
+# ratings/rankings files, but still get projected scores on the schedule.
+PRIOR_URL        = "https://raw.githubusercontent.com/AllMOSports/Girls_Basketball_Ratings_2025-2026/main/ratings.json"
+PRIOR_LOCAL_PATH = "girls_basketball_ratings_2025_final.json"   # optional local copy; used first if present
+PRIOR_KEEP       = 0.67
+BLEND_FULL_GAMES = 8
+MIN_GAMES_SHOWN  = 3
+
+# League average used for projected scores until enough games are in; then
+# this season's real average takes over (blended over LEAGUE_AVG_FULL_GAMES).
+LEAGUE_AVG_DEFAULT   = 44.5
+LEAGUE_AVG_FULL_GAMES = 300
+
+# Filled in by main() and written into the ratings files for reference.
+GAMES_PLAYED = {}
+CURRENT_WEIGHT = {}
+
 # ---------------------------------------------------------------------------
 # MANUAL GAMES (not listed on MSHSAA Scoreboard)
 # ---------------------------------------------------------------------------
@@ -996,7 +1020,9 @@ def report_teams_not_rated(ovr_rating, team_to_class):
         print(f"  TEAMS NOT INCLUDED IN RATINGS: {len(not_rated)} of "
               f"{len(team_to_class)}")
         for t in not_rated:
+            g = GAMES_PLAYED.get(t, 0)
             reason = ("excluded via EXCLUDED_TEAMS" if t in EXCLUDED_TEAMS
+                      else f"{g} completed game(s), needs {MIN_GAMES_SHOWN} to be shown" if g
                       else "no completed games in scraped data")
             print(f"    - {t} (Class {team_to_class[t]}): {reason}")
     print("=" * 70)
@@ -1182,6 +1208,95 @@ def run_iterations(games, teams, off_rating, def_rating, league_avg,
             print(f"  [{phase_label}] Iteration {iteration + 1}/{iterations} complete")
 
 
+def load_prior_ratings():
+    """Last season's final ratings: {school: (off, def)}. Empty if unavailable."""
+    import os
+    try:
+        if os.path.exists(PRIOR_LOCAL_PATH):
+            with open(PRIOR_LOCAL_PATH) as f:
+                data = json.load(f)
+        else:
+            resp = requests.get(PRIOR_URL, timeout=30)
+            resp.raise_for_status()
+            data = resp.json()
+    except Exception as e:
+        print(f"  WARNING: couldn't load 2025-26 ratings ({e}) -- no early-season blend this run")
+        return {}
+    prior = {t["school"]: (t["off_rating"], t["def_rating"]) for t in data.get("teams", [])}
+    print(f"  Loaded {len(prior)} teams' 2025-26 final ratings ({data.get('last_updated')})")
+    return prior
+
+
+def _pkey(name):
+    """2025-26 files drop the parentheses ("Central Cape Girardeau"), so
+    compare names with parentheses removed."""
+    return " ".join(name.replace("(", " ").replace(")", " ").split()).lower()
+
+
+def match_prior(team, prior, prior_by_member, this_season=()):
+    """Same name first; then each 2026-27 co-op member (host first) matched
+    to any member of a 2025-26 team, for co-ops that changed names or hosts;
+    last, the host with its parenthetical dropped ("DeLaSalle Charter (KC)"),
+    unless that shorter name is a different school this season ("Delta")."""
+    parts = team.split(" with ")
+    members = [parts[0].strip()] + ([m.strip() for m in parts[1].split(",")] if len(parts) > 1 else [])
+    keys = [_pkey(team)] + [_pkey(m) for m in members]
+    short = re.sub(r"\s*\(.*?\)", "", members[0]).strip()
+    if short != members[0] and short not in this_season:
+        keys.append(_pkey(short))
+    for key in keys:
+        if key in prior_by_member:
+            return prior_by_member[key]
+    return None
+
+
+def blend_with_prior(off_cur, def_cur, games_played, team_to_class, prior):
+    """Returns blended (off, def, ovr) for EVERY classified team."""
+    prior_by_member = {}
+    for name, val in prior.items():          # full names win over co-op members
+        prior_by_member[_pkey(name)] = val
+    for name, val in prior.items():
+        parts = name.split(" with ")
+        members = [parts[0]] + (parts[1].split(",") if len(parts) > 1 else [])
+        for m in members:
+            prior_by_member.setdefault(_pkey(m), val)
+
+    kept = {}
+    for team in team_to_class:
+        p = match_prior(team, prior, prior_by_member, team_to_class)
+        if p is not None:
+            kept[team] = (p[0] * PRIOR_KEEP, p[1] * PRIOR_KEEP)
+
+    class_avg = {}
+    for c in set(team_to_class.values()):
+        vals = [kept[t] for t in kept if team_to_class[t] == c]
+        class_avg[c] = ((sum(v[0] for v in vals) / len(vals), sum(v[1] for v in vals) / len(vals))
+                        if vals else (0.0, 0.0))
+
+    off_b, def_b = {}, {}
+    no_prior = 0
+    for team in team_to_class:
+        if team in EXCLUDED_TEAMS:
+            continue
+        g = games_played.get(team, 0)
+        w = min(g / BLEND_FULL_GAMES, 1.0) if team in off_cur else 0.0
+        if team in kept:
+            p_off, p_def = kept[team]
+        else:
+            p_off, p_def = class_avg[team_to_class[team]]
+            no_prior += 1
+        c_off, c_def = off_cur.get(team, 0.0), def_cur.get(team, 0.0)
+        off_b[team] = w * c_off + (1 - w) * p_off
+        def_b[team] = w * c_def + (1 - w) * p_def
+        CURRENT_WEIGHT[team] = round(w, 3)
+    ovr_b = {t: round(off_b[t] + def_b[t], 2) for t in off_b}
+    full = sum(1 for t in off_b if CURRENT_WEIGHT[t] >= 1)
+    print(f"  Blend: {len(off_b)} teams; {full} fully on 2026-27 ratings "
+          f"({BLEND_FULL_GAMES}+ games); {no_prior} with no 2025-26 rating "
+          f"(started at class average)")
+    return off_b, def_b, ovr_b
+
+
 def calculate_ratings(all_games, iterations=ITERATIONS):
     games = [(t1, t2, s1, s2) for _, t1, s1, t2, s2 in all_games]
 
@@ -1243,6 +1358,8 @@ def build_team_entries(off_rating, def_rating, ovr_rating,
             "off_rank":       off_rank[t],
             "def_rating":     round(def_rating[t], 2),
             "def_rank":       def_rank[t],
+            "games":          GAMES_PLAYED.get(t, 0),
+            "current_weight": CURRENT_WEIGHT.get(t),
         }
         for t in ovr_sorted
     ]
@@ -1422,11 +1539,6 @@ if __name__ == "__main__":
 
     print("\nSelecting completed games for ratings...")
     all_games = rated_games_from_all(schedule_games)
-    if not all_games and not MANUAL_GAMES:
-        print("No completed games yet -- saving schedule without "
-              "predictions, skipping ratings.")
-        save_schedule(build_schedule(schedule_games))
-        exit(0)
 
     if MANUAL_GAMES:
         print(f"\nAdding {len(MANUAL_GAMES)} manual game(s)...")
@@ -1451,11 +1563,36 @@ if __name__ == "__main__":
     save_csv(all_games)
 
     print(f"\nRunning ratings engine ({ITERATIONS} iterations)...")
-    off_rating, def_rating, ovr_rating, league_avg = calculate_ratings(all_games)
+    if all_games:
+        off_cur, def_cur, _, league_cur = calculate_ratings(all_games)
+    else:
+        print("  No completed games yet -- using 2025-26 ratings only.")
+        off_cur, def_cur, league_cur = {}, {}, LEAGUE_AVG_DEFAULT
+
+    for _, t1, _, t2, _ in all_games:
+        GAMES_PLAYED[t1] = GAMES_PLAYED.get(t1, 0) + 1
+        GAMES_PLAYED[t2] = GAMES_PLAYED.get(t2, 0) + 1
+
+    lw = min(len(all_games) / LEAGUE_AVG_FULL_GAMES, 1.0)
+    league_avg = lw * league_cur + (1 - lw) * LEAGUE_AVG_DEFAULT
+    print(f"  League average for projections: {league_avg:.2f} "
+          f"({len(all_games)} games; {lw:.0%} this season's actual average)")
+
+    print("\nBlending with 2025-26 ratings...")
+    off_all, def_all, ovr_all = blend_with_prior(
+        off_cur, def_cur, GAMES_PLAYED, team_to_class, load_prior_ratings())
+
+    # Ratings/rankings files only list teams with MIN_GAMES_SHOWN+ games.
+    shown = [t for t in off_all if GAMES_PLAYED.get(t, 0) >= MIN_GAMES_SHOWN]
+    off_rating = {t: off_all[t] for t in shown}
+    def_rating = {t: def_all[t] for t in shown}
+    ovr_rating = {t: ovr_all[t] for t in shown}
+    print(f"  {len(shown)} team(s) have {MIN_GAMES_SHOWN}+ games and appear in the ratings files.")
 
     print("\nBuilding schedule files (with predictions)...")
+    # Every classified team gets projections, shown in the rankings or not.
     save_schedule(build_schedule(schedule_games,
-                                 ratings=(off_rating, def_rating, league_avg)))
+                                 ratings=(off_all, def_all, league_avg)))
 
     print("\nSaving overall ratings JSON...")
     save_overall_json(off_rating, def_rating, ovr_rating, league_avg,
