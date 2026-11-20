@@ -1,0 +1,29 @@
+{
+  "last_updated": "November 20, 2026 at 03:18 PM",
+  "league_average": 41.2,
+  "classification": 2,
+  "teams": [
+    {
+      "ovr_rank": 1,
+      "school": "Vienna",
+      "classification": 2,
+      "district": 9,
+      "ovr_rating": 8.5,
+      "off_rating": 10.4,
+      "off_rank": 1,
+      "def_rating": -1.9,
+      "def_rank": 1
+    },
+    {
+      "ovr_rank": 2,
+      "school": "Russellville",
+      "classification": 2,
+      "district": 8,
+      "ovr_rating": -8.5,
+      "off_rating": 1.9,
+      "off_rank": 2,
+      "def_rating": -10.4,
+      "def_rank": 2
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "last_updated": "November 20, 2026 at 03:18 PM",
+  "league_average": 41.2,
+  "classification": 6,
+  "teams": [
+    {
+      "ovr_rank": 1,
+      "school": "Smith-Cotton",
+      "classification": 6,
+      "district": 5,
+      "ovr_rating": 11.0,
+      "off_rating": 2.4,
+      "off_rank": 1,
+      "def_rating": 8.6,
+      "def_rank": 1
+    }
+  ]
+}

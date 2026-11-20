@@ -1,0 +1,29 @@
+{
+  "last_updated": "November 20, 2026 at 03:18 PM",
+  "league_average": 41.2,
+  "classification": 4,
+  "teams": [
+    {
+      "ovr_rank": 1,
+      "school": "Paseo Academy",
+      "classification": 4,
+      "district": 15,
+      "ovr_rating": -3.0,
+      "off_rating": -11.6,
+      "off_rank": 2,
+      "def_rating": 8.6,
+      "def_rank": 1
+    },
+    {
+      "ovr_rank": 2,
+      "school": "Summit Christian Academy",
+      "classification": 4,
+      "district": 13,
+      "ovr_rating": -11.0,
+      "off_rating": -8.6,
+      "off_rank": 1,
+      "def_rating": -2.4,
+      "def_rank": 2
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "last_updated": "November 20, 2026 at 03:18 PM",
+  "league_average": 41.2,
+  "classification": 3,
+  "teams": [
+    {
+      "ovr_rank": 1,
+      "school": "Palmyra",
+      "classification": 3,
+      "district": 6,
+      "ovr_rating": 20.0,
+      "off_rating": 7.9,
+      "off_rank": 2,
+      "def_rating": 12.1,
+      "def_rank": 2
+    },
+    {
+      "ovr_rank": 2,
+      "school": "Brookfield",
+      "classification": 3,
+      "district": 16,
+      "ovr_rating": 19.5,
+      "off_rating": 6.4,
+      "off_rank": 3,
+      "def_rating": 13.1,
+      "def_rank": 1
+    },
+    {
+      "ovr_rank": 3,
+      "school": "New Covenant Academy",
+      "classification": 3,
+      "district": 11,
+      "ovr_rating": 12.5,
+      "off_rating": 11.9,
+      "off_rank": 1,
+      "def_rating": 0.6,
+      "def_rank": 4
+    },
+    {
+      "ovr_rank": 4,
+      "school": "Believe Acad Charter",
+      "classification": 3,
+      "district": 4,
+      "ovr_rating": -1.5,
+      "off_rating": -4.6,
+      "off_rank": 4,
+      "def_rating": 3.1,
+      "def_rank": 3
+    },
+    {
+      "ovr_rank": 5,
+      "school": "Caruthersville",
+      "classification": 3,
+      "district": 1,
+      "ovr_rating": -18.0,
+      "off_rating": -6.1,
+      "off_rank": 5,
+      "def_rating": -11.9,
+      "def_rank": 6
+    },
+    {
+      "ovr_rank": 6,
+      "school": "Bowling Green",
+      "classification": 3,
+      "district": 6,
+      "ovr_rating": -20.0,
+      "off_rating": -12.1,
+      "off_rank": 6,
+      "def_rating": -7.9,
+      "def_rank": 5
+    }
+  ]
+}
