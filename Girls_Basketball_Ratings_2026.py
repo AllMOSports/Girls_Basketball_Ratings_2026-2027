@@ -196,6 +196,16 @@ def load_classifications(path=CLASSIFICATIONS_PATH):
 # NAME RESOLUTION
 # ---------------------------------------------------------------------------
 
+# Real school behind each ID (per the boys overrides), for reference.
+WRONG_CSV_IDS = {
+    "208": "Sumner",                 # CSV says West Plains
+    "453": "Southland",              # CSV says Sweet Springs
+    "549": "St. Mary's South Side",  # CSV says Webster Groves
+    "468": "Summersville",           # CSV says Wright City
+    "450": "South Pemiscot",         # CSV says Summersville
+}
+
+
 def build_id_to_classname(team_to_class, schools_csv=SCHOOLS_CSV):
     """
     Build { school_id_str : classification_name } by exact-matching
@@ -289,6 +299,15 @@ def build_id_to_classname(team_to_class, schools_csv=SCHOOLS_CSV):
               f"whose name isn't in {CLASSIFICATIONS_PATH} (update or remove):")
         for sid, n in sorted(stale.items(), key=lambda x: x[1]):
             print(f"    s={sid}: {n}")
+
+    # mshsaa_schools.csv has wrong IDs for a run of schools (the S-W range),
+    # which MANUAL_OVERRIDES normally corrects. These IDs belong to schools
+    # with no girls team in the 2026-27 girls classifications, so there's no
+    # override for them -- and without one the CSV would hand their games to
+    # the wrong girls team (e.g. Sumner's games showed up as West Plains).
+    # Unmap them so their games stay unclassified under their own names.
+    for sid in WRONG_CSV_IDS:
+        id_to_classname.pop(sid, None)
 
     print(f"  [name-resolve] {len(id_to_classname)} schools mapped by ID "
           f"({len(MANUAL_OVERRIDES) - len(stale)} via manual overrides)")
