@@ -222,16 +222,13 @@ def build_id_to_classname(team_to_class, schools_csv=SCHOOLS_CSV):
         "446": "South Harrison",
         "447": "South Holt with Craig",
         "448": "South Iron",
-        "453": "Southland",
         "454": "Southwest (Livingston County) with Breckenridge",
         "455": "Southwest (Washburn)",
-        "549": "St. Mary's South Side",
         "205": "Steelville",
         "463": "Stockton",
         "464": "Stoutland",
         "466": "Strafford",
         "467": "Sturgeon",
-        "208": "Sumner",
         "473": "Tina-Avalon with Hale",
         "198": "Truman",
         "199": "Twin Rivers",
@@ -246,25 +243,24 @@ def build_id_to_classname(team_to_class, schools_csv=SCHOOLS_CSV):
         "207": "Sullivan",
         "445": "Smithville",
         "197": "South Callaway",
-        "450": "South Pemiscot",
         "458": "St. Elizabeth",
         "460": "Stanberry",
         "465": "Stover",
         "193": "Slater with Malta Bend",   # girls co-op (boys list has plain "Slater")
         "456": "Sparta",
-        "468": "Summersville",
         "246": "Macon County with Bucklin",
         "449": "Jefferson (Conception) with South Nodaway",
         # girls-only entries from 2025-26
-        "215": "Billings with Hurley",
         "219": "Bloomfield with Richland (Essex)",
         "25":  "Gateway with Soldan International Studies",
-        "18":  "Greenfield with Golden City",
-        "131": "Miller Career Academy with Sumner",
-        "394": "Northeast Vernon County with Rich Hill",
         "541": "Rosati-Kain",
         "544": "St. Francis Borgia",
-        "559": "Valle Catholic with St. Paul Lutheran (Farmington)",
+        # 2026-27 girls co-ops: partner schools listed under their own IDs.
+        # NOT Bismarck (216) or Norborne (384): both play their own co-op
+        # head-to-head on the schedule, so they're separate teams.
+        "462": "Osborn with Stewartsville",
+        "327": "McAuley Catholic with Jasper",
+        "365": "Drexel with Miami (Amoret)",
     }
 
     df = pd.read_csv(schools_csv)
