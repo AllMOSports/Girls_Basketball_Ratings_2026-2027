@@ -35,6 +35,7 @@ import socket
 import urllib3.util.connection as urllib3_cn
 from datetime import timezone
 from collections import Counter
+import difflib
 
 # Force IPv4: mshsaa.org resolves to IPv4 and IPv6, and the IPv6 route has
 # failed before ("Network is unreachable", errno 101). Harmless otherwise.
@@ -75,6 +76,12 @@ SCHEDULE_CSV_PATH     = f"girls_basketball_schedule_{SEASON_YEAR}.csv"
 # MANUAL_OVERRIDES_PATH -- see save_missing_scores_report().
 MISSING_SCORES_CSV_PATH  = f"girls_basketball_missing_scores_{SEASON_YEAR}.csv"
 MISSING_SCORE_GRACE_DAYS = 2
+
+# --- Unscheduled-teams checklist ---
+# Classified teams with NO games anywhere in the scrape (scheduled or
+# completed), plus the closest unmatched scoreboard names and their MSHSAA
+# IDs -- usually the s= ID to add to MANUAL_OVERRIDES.
+UNSCHEDULED_CSV_PATH = f"girls_basketball_unscheduled_teams_{SEASON_YEAR}.csv"
 SCHOOLS_CSV           = "mshsaa_schools.csv"
 ITERATIONS            = 1000
 LEARNING_RATE         = 0.1
@@ -329,7 +336,7 @@ def resolve_name_or_raw(row, school_cell, id_to_classname, known_teams):
     if raw and raw in known_teams:
         return raw, True
     if raw:
-        UNCLASSIFIED_OPPONENTS[f"{raw} (s={sid or '?'})"] += 1
+        UNCLASSIFIED_OPPONENTS[(raw, sid or "?")] += 1
     return raw, False
 
 
@@ -481,8 +488,8 @@ def scrape_full_season(id_to_classname, known_teams):
         print(f"\n  {len(UNCLASSIFIED_OPPONENTS)} opponent name(s) aren't in "
               f"{CLASSIFICATIONS_PATH} (kept in the schedule, not rated). "
               f"Most frequent -- check for any missed Missouri schools:")
-        for name, n in top:
-            print(f"    {name}: {n}")
+        for (name, sid), n in top:
+            print(f"    {name} (s={sid}): {n}")
     return all_games
 
 
@@ -882,13 +889,84 @@ def report_missing_teams(all_games, team_to_class):
     )
 
     if missing:
-        print(f"\n  MISSING TEAMS: {len(missing)} classification schools have "
-              f"no games in the scraped data.")
-        print(f"  Either their MSHSAA page shows a different name than")
-        print(f"  classifications.json, or they haven't played yet.")
+        print(f"\n  NO COMPLETED GAMES: {len(missing)} classification schools have "
+              f"no completed games yet.")
+        print(f"  Early in the season most of these just haven't played -- see")
+        print(f"  the UNSCHEDULED TEAMS list for schools that may need an ID.")
         print(f"  Missing: {missing}\n")
     else:
         print("\n  All classification schools have at least one game. \n")
+
+
+def _norm_name(name):
+    n = name.lower().replace("high school", "").replace("'", "").replace(".", "")
+    return re.sub(r"[^a-z0-9]+", " ", n).strip()
+
+
+def suggest_matches(team, limit=3):
+    """Unmatched scoreboard names that look like this classified team.
+    Compares the full name and the host school (before ' with ')."""
+    targets = {_norm_name(team), _norm_name(team.split(" with ")[0])}
+    scored = []
+    for (raw, sid), n in UNCLASSIFIED_OPPONENTS.items():
+        r = _norm_name(re.sub(r"\(.*\)$", "", raw))   # drop "(City, ST)"
+        if not r:
+            continue
+        best = max(difflib.SequenceMatcher(None, r, t).ratio() for t in targets)
+        if any(r == t or (len(r) > 3 and (r in t or t in r)) for t in targets):
+            best = max(best, 0.95)
+        if best >= 0.75:
+            scored.append((best, raw, sid, n))
+    scored.sort(key=lambda x: -x[0])
+    return scored[:limit]
+
+
+def report_unscheduled_teams(schedule_games, team_to_class, team_to_district):
+    """
+    Every classifications.json team that appears in NO game in the whole
+    scrape -- completed or scheduled, any date SEASON_START..SEASON_END.
+    These are the schools that almost certainly need an s= ID added to
+    MANUAL_OVERRIDES (or have no schedule posted on MSHSAA yet). Writes
+    UNSCHEDULED_CSV_PATH with suggested matches from the unmatched names.
+    """
+    seen = set()
+    for g in schedule_games:
+        if g["team1_classified"]:
+            seen.add(g["team1"])
+        if g["team2_classified"]:
+            seen.add(g["team2"])
+
+    missing = sorted(t for t in team_to_class
+                     if t not in seen and t not in EXCLUDED_TEAMS)
+    rows = []
+    print("\n" + "=" * 70)
+    if not missing:
+        print(f"  All {len(team_to_class)} classification teams have at least "
+              f"one game (scheduled or played) in the scrape.")
+    else:
+        print(f"  UNSCHEDULED TEAMS: {len(missing)} of {len(team_to_class)} "
+              f"classification teams have NO games anywhere in the scrape")
+        print(f"  (scheduled or played). Likely need an ID in MANUAL_OVERRIDES,")
+        print(f"  or their schedule isn't posted on MSHSAA yet.")
+        for t in missing:
+            sugg = suggest_matches(t)
+            hint = "; ".join(f"{raw} (s={sid}, {n} games)" for _, raw, sid, n in sugg)
+            print(f"    - {t} (Class {team_to_class[t]}, District "
+                  f"{team_to_district.get(t)})" + (f"  -> maybe: {hint}" if hint else ""))
+            rows.append({
+                "school": t,
+                "classification": team_to_class[t],
+                "district": team_to_district.get(t),
+                "suggested_matches": hint,
+                "suggested_override": (f'"{sugg[0][2]}": "{t}",'
+                                       if sugg and sugg[0][2] != "?" else ""),
+            })
+    print("=" * 70)
+    _write_dict_csv(UNSCHEDULED_CSV_PATH, rows,
+                    ["school", "classification", "district",
+                     "suggested_matches", "suggested_override"])
+    print(f"  Wrote {UNSCHEDULED_CSV_PATH} ({len(rows)} team(s))")
+    return missing
 
 
 def report_teams_not_rated(ovr_rating, team_to_class):
@@ -1323,6 +1401,9 @@ if __name__ == "__main__":
 
     print("\nChecking for missing scores...")
     save_missing_scores_report(schedule_games)
+
+    print("\nChecking for classified teams with no games at all...")
+    report_unscheduled_teams(schedule_games, team_to_class, team_to_district)
 
     print("\nSelecting completed games for ratings...")
     all_games = rated_games_from_all(schedule_games)
