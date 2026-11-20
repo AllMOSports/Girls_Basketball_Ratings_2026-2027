@@ -498,7 +498,11 @@ def main():
  
     print("Loading All_MO_Sports-Data files...")
     resolver = SlugResolver(load_data_file("output/schools.json")["schools"], load_data_file("school_aliases.json"))
-    history_doc = load_data_file(HISTORY_FILE)
+    try:
+        history_doc = load_data_file(HISTORY_FILE)
+    except Exception as e:   # program-history section is optional
+        print(f"  WARNING: {HISTORY_FILE} unavailable ({e}); program history left out")
+        history_doc = {}
     names_in_play = {g["team1"] for g in upcoming} | {g["team2"] for g in upcoming}
     h2h_hist = load_h2h_history(set(ratings) | names_in_play, load_postseason_pairs())
  
