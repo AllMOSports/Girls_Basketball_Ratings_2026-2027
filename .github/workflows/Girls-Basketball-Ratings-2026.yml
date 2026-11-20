@@ -77,6 +77,10 @@ jobs:
       - name: Flag teams not in ratings
         if: always()
         run: |
+          if grep -q "UNSCHEDULED TEAMS" ratings_log.txt; then
+            echo "::warning::Some classification teams have no games in the scrape -- see run summary"
+            sed -n '/UNSCHEDULED TEAMS/,/^=====/p' ratings_log.txt >> "$GITHUB_STEP_SUMMARY"
+          fi
           if grep -q "TEAMS NOT INCLUDED IN RATINGS" ratings_log.txt; then
             echo "::warning::Some classification teams are not in the ratings -- see run log"
             sed -n '/TEAMS NOT INCLUDED IN RATINGS/,/^=====/p' ratings_log.txt >> "$GITHUB_STEP_SUMMARY"
@@ -139,7 +143,8 @@ jobs:
           git add girls_basketball_games_2026.json girls_basketball_games_2026.csv \
                   girls_basketball_games_2026_all.json girls_basketball_games_2026_all.csv \
                   girls_basketball_schedule_2026.json girls_basketball_schedule_2026.csv \
-                  girls_basketball_missing_scores_2026.csv 2>/dev/null || true
+                  girls_basketball_missing_scores_2026.csv \
+                  girls_basketball_unscheduled_teams_2026.csv 2>/dev/null || true
           # Size-adjusted rankings (skipped quietly if that step failed)
           git add per_capita_girls_basketball_2026.json per_capita_girls_basketball_2026.csv 2>/dev/null || true
           # Matchup previews (skipped quietly if that step failed)
