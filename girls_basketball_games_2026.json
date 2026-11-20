@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-11-19",
+    "team1": "Chadwick",
+    "score1": 74,
+    "team2": "Aurora",
+    "score2": 41,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-19",
     "team1": "Palmyra",
     "score1": 57,
     "team2": "Bowling Green",
@@ -14,6 +23,24 @@
     "score1": 65,
     "team2": "Caruthersville",
     "score2": 29,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-19",
+    "team1": "Greenville",
+    "score1": 53,
+    "team2": "Clearwater",
+    "score2": 63,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-19",
+    "team1": "Stoutland",
+    "score1": 33,
+    "team2": "Conway",
+    "score2": 26,
     "forfeit": false,
     "overtime": false
   },
@@ -100,36 +127,9 @@
   },
   {
     "date": "2026-11-19",
-    "team1": "Chadwick",
-    "score1": null,
-    "team2": "Aurora",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-19",
     "team1": "Charleston",
     "score1": null,
     "team2": "Bloomfield with Richland (Essex)",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-19",
-    "team1": "Greenville",
-    "score1": null,
-    "team2": "Clearwater",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-19",
-    "team1": "Stoutland",
-    "score1": null,
-    "team2": "Conway",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -3919,15 +3919,6 @@
     "team1": "Calvary Lutheran",
     "score1": null,
     "team2": "Sacred Heart",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-12-03",
-    "team1": "North Callaway",
-    "score1": null,
-    "team2": "Silex",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -22168,6 +22159,15 @@
   },
   {
     "date": "2027-01-22",
+    "team1": "Hume",
+    "score1": null,
+    "team2": "Drexel with Miami (Amoret)",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2027-01-22",
     "team1": "Marquette",
     "score1": null,
     "team2": "MICDS",
@@ -22180,6 +22180,15 @@
     "team1": "North Platte",
     "score1": null,
     "team2": "Mid-Buchanan",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2027-01-22",
+    "team1": "McAuley Catholic with Jasper",
+    "score1": null,
+    "team2": "Midway",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -25690,6 +25699,15 @@
     "team1": "Plato",
     "score1": null,
     "team2": "Iberia",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2027-02-01",
+    "team1": "Rich Hill",
+    "score1": null,
+    "team2": "McAuley Catholic with Jasper",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -30649,6 +30667,15 @@
     "team1": "St. Charles",
     "score1": null,
     "team2": "Holt",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2027-02-09",
+    "team1": "Appleton City",
+    "score1": null,
+    "team2": "McAuley Catholic with Jasper",
     "score2": null,
     "forfeit": false,
     "overtime": false

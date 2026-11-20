@@ -1,6 +1,6 @@
 {
-  "last_updated": "November 20, 2026 at 03:18 PM",
-  "league_average": 41.2,
+  "last_updated": "November 20, 2026 at 03:46 PM",
+  "league_average": 42.85,
   "classification": 1,
   "teams": [
     {
@@ -9,9 +9,9 @@
       "classification": 1,
       "district": 9,
       "ovr_rating": 18.5,
-      "off_rating": 8.9,
-      "off_rank": 2,
-      "def_rating": 9.6,
+      "off_rating": 8.08,
+      "off_rank": 3,
+      "def_rating": 10.42,
       "def_rank": 1
     },
     {
@@ -20,43 +20,65 @@
       "classification": 1,
       "district": 2,
       "ovr_rating": 18.0,
-      "off_rating": 11.9,
-      "off_rank": 1,
-      "def_rating": 6.1,
-      "def_rank": 2
+      "off_rating": 11.08,
+      "off_rank": 2,
+      "def_rating": 6.92,
+      "def_rank": 3
     },
     {
       "ovr_rank": 3,
+      "school": "Chadwick",
+      "classification": 1,
+      "district": 2,
+      "ovr_rating": 16.5,
+      "off_rating": 15.58,
+      "off_rank": 1,
+      "def_rating": 0.92,
+      "def_rank": 4
+    },
+    {
+      "ovr_rank": 4,
+      "school": "Stoutland",
+      "classification": 1,
+      "district": 3,
+      "ovr_rating": 3.5,
+      "off_rating": -4.92,
+      "off_rank": 5,
+      "def_rating": 8.42,
+      "def_rank": 2
+    },
+    {
+      "ovr_rank": 5,
       "school": "Exeter",
       "classification": 1,
       "district": 5,
       "ovr_rating": -12.5,
-      "off_rating": -0.6,
-      "off_rank": 3,
-      "def_rating": -11.9,
-      "def_rank": 5
+      "off_rating": -1.42,
+      "off_rank": 4,
+      "def_rating": -11.08,
+      "def_rank": 7
     },
     {
-      "ovr_rank": 4,
+      "ovr_rank": 6,
       "school": "Kingsville",
       "classification": 1,
       "district": 8,
       "ovr_rating": -18.5,
-      "off_rating": -9.6,
-      "off_rank": 4,
-      "def_rating": -8.9,
-      "def_rank": 4
+      "off_rating": -10.42,
+      "off_rank": 6,
+      "def_rating": -8.08,
+      "def_rank": 6
     },
     {
-      "ovr_rank": 5,
+      "ovr_rank": 7,
       "school": "Novinger",
       "classification": 1,
       "district": 11,
       "ovr_rating": -19.5,
-      "off_rating": -13.1,
-      "off_rank": 5,
-      "def_rating": -6.4,
-      "def_rank": 3
+      "off_rating": -13.92,
+      "off_rank": 7,
+      "def_rating": -5.58,
+      "def_rank": 5
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "last_updated": "November 20, 2026 at 03:18 PM",
-  "league_average": 41.2,
+  "last_updated": "November 20, 2026 at 03:46 PM",
+  "league_average": 42.85,
   "classification": 5,
   "teams": [
     {
@@ -9,9 +9,9 @@
       "classification": 5,
       "district": 5,
       "ovr_rating": 16.5,
-      "off_rating": 16.4,
+      "off_rating": 15.58,
       "off_rank": 1,
-      "def_rating": 0.1,
+      "def_rating": 0.92,
       "def_rank": 3
     },
     {
@@ -20,9 +20,9 @@
       "classification": 5,
       "district": 8,
       "ovr_rating": 3.0,
-      "off_rating": -8.6,
+      "off_rating": -9.42,
       "off_rank": 4,
-      "def_rating": 11.6,
+      "def_rating": 12.42,
       "def_rank": 1
     },
     {
@@ -31,9 +31,9 @@
       "classification": 5,
       "district": 1,
       "ovr_rating": 1.5,
-      "off_rating": -3.1,
+      "off_rating": -3.92,
       "off_rank": 3,
-      "def_rating": 4.6,
+      "def_rating": 5.42,
       "def_rank": 2
     },
     {
@@ -42,9 +42,9 @@
       "classification": 5,
       "district": 5,
       "ovr_rating": -16.5,
-      "off_rating": -0.1,
+      "off_rating": -0.92,
       "off_rank": 2,
-      "def_rating": -16.4,
+      "def_rating": -15.58,
       "def_rank": 4
     }
   ]

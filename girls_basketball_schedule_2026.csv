@@ -87,7 +87,7 @@ Appleton City,2027-01-19,Midway,,,,,,,,,,False,False
 Appleton City,2027-01-22,Lakeland,,,,,,,,,,False,False
 Appleton City,2027-02-02,Liberal,,,,,,,,,,False,False
 Appleton City,2027-02-05,Archie,,,,,,,,,,False,False
-Appleton City,2027-02-09,Jasper,,,,,,,,,,False,False
+Appleton City,2027-02-09,McAuley Catholic with Jasper,,,,,,,,,,False,False
 Appleton City,2027-02-12,Rich Hill,,,,,,,,,,False,False
 Appleton City,2027-02-16,Osceola,,,,,,,,,,False,False
 Appleton City,2027-02-18,Sheldon,,,,,,,,,,False,False
@@ -174,7 +174,7 @@ Atlanta,2027-02-11,Community,,,,,,,,,,False,False
 Atlanta,2027-02-12,Milan,,,,,,,,,,False,False
 Atlanta,2027-02-16,Northwestern (Mendon) with Keytesville,,,,,,,,,,False,False
 Atlanta,2027-02-18,Knox County,,,,,,,,,,False,False
-Aurora,2026-11-19,Chadwick,,,,,,,,,,False,False
+Aurora,2026-11-19,Chadwick,,41,74,L,41.0,74.0,-0.0,-0.0,-0.0,False,False
 Aurora,2026-11-21,Springfield Catholic,,,,,,,,,,False,False
 Aurora,2026-12-10,Mountain Grove,,,,,,,,,,False,False
 Aurora,2026-12-14,Branson,,,,,,,,,,False,False
@@ -287,7 +287,7 @@ Bayless,2027-02-18,Affton,,,,,,,,,,False,False
 Bayless,2027-02-22,St. Charles West,,,,,,,,,,False,False
 Bayless,2027-02-23,Villa Duchesne,,,,,,,,,,False,False
 Bayless,2027-02-25,Herculaneum,,,,,,,,,,False,False
-Believe Acad Charter,2026-11-19,Gateway with Soldan International Studies,,32,35,L,32.0,35.0,-0.0,0.0,0.0,False,False
+Believe Acad Charter,2026-11-19,Gateway with Soldan International Studies,,32,35,L,32.0,35.0,-0.0,0.0,-0.0,False,False
 Believe Acad Charter,2026-11-20,Providence Academy Sr.,,,,,,,,,,False,False
 Believe Acad Charter,2026-11-21,STEAM Academy,,,,,,,,,,False,False
 Believe Acad Charter,2026-12-01,Ritenour,,,,,,,,,,False,False
@@ -969,7 +969,7 @@ Camdenton,2027-01-26,Battle,,,,,,,,,,False,False
 Camdenton,2027-01-28,Bolivar,,,,,,,,,,False,False
 Camdenton,2027-02-02,Father Tolton,,,,,,,,,,False,False
 Camdenton,2027-02-04,Helias Catholic,,,,,,,,,,False,False
-Camdenton,2027-02-09,Conway,,,,,,,,,,False,False
+Camdenton,2027-02-09,Conway,,,,,37.0,50.0,,,,False,False
 Camdenton,2027-02-15,Capital City,,,,,,,,,,False,False
 Camdenton,2027-02-18,Rock Bridge,,,,,,,,,,False,False
 Camdenton,2027-02-25,St. James,,,,,,,,,,False,False
@@ -1321,7 +1321,7 @@ Centralia,2027-02-12,Monroe City,,,,,,,,,,False,False
 Centralia,2027-02-16,South Shelby,,,,,,,,,,False,False
 Centralia,2027-02-17,Nevada,,,,,,,,,,False,False
 Centralia,2027-02-19,Clark County,,,,,,,,,,False,False
-Chadwick,2026-11-19,Aurora,,,,,,,,,,False,False
+Chadwick,2026-11-19,Aurora,,74,41,W,74.0,41.0,0.0,0.0,0.0,False,False
 Chadwick,2026-11-20,Springfield Catholic,,,,,,,,,,False,False
 Chadwick,2026-12-01,Galena,,,,,,,,,,False,False
 Chadwick,2026-12-10,Miller,,,,,,,,,,False,False
@@ -1413,7 +1413,6 @@ Chillicothe,2027-02-25,Maryville,,,,,,,,,,False,False
 "Christ Prep(Lenexa, KS)",2027-02-09,Summit Christian Academy,,,,,,,,,,False,False
 Christian Fellowship Sr.,2027-01-14,Fayette,,,,,,,,,,False,False
 Christian Fellowship Sr.,2027-02-08,Pilot Grove,,,,,,,,,,False,False
-Christian Fellowship Sr.,2027-02-11,Moberly,,,,,,,,,,False,False
 Christian Fellowship Sr.,2027-02-19,Bunceton,,,,,,,,,,False,False
 "Clarinda(Clarinda, IA)",2027-01-11,Maryville,,,,,,,,,,False,False
 Clark County,2026-11-24,Scotland County,,,,,,,,,,False,False
@@ -1456,7 +1455,7 @@ Clayton,2027-02-17,Whitfield,,,,,,,,,,False,False
 Clayton,2027-02-19,Mehlville,,,,,,,,,,False,False
 Clayton,2027-02-24,Rockwood Summit,,,,,,,,,,False,False
 Clayton,2027-02-26,Ladue Horton Watkins,,,,,,,,,,False,False
-Clearwater,2026-11-19,Greenville,,,,,,,,,,False,False
+Clearwater,2026-11-19,Greenville,,63,53,W,63.0,53.0,0.0,-0.0,0.0,False,False
 Clearwater,2026-11-20,Puxico,,,,,,,,,,False,False
 Clearwater,2026-12-03,East Carter,,,,,,,,,,False,False
 Clearwater,2026-12-04,Viburnum,,,,,,,,,,False,False
@@ -1468,7 +1467,7 @@ Clearwater,2027-01-08,South Iron,,,,,,,,,,False,False
 Clearwater,2027-01-11,Van Buren,,,,,,,,,,False,False
 Clearwater,2027-01-12,Neelyville,,,,,,,,,,False,False
 Clearwater,2027-01-14,Twin Rivers,,,,,,,,,,False,False
-Clearwater,2027-01-25,Naylor,,,,,,,,,,False,False
+Clearwater,2027-01-25,Naylor,,,,,46.0,59.0,,,,False,False
 Clearwater,2027-01-26,Doniphan,,,,,,,,,,False,False
 Clearwater,2027-02-04,Ellington,,,,,,,,,,False,False
 Clearwater,2027-02-16,Campbell,,,,,,,,,,False,False
@@ -1653,19 +1652,19 @@ Confluence Prep Academy Charter with Grand Center Arts Charter,2027-02-09,John B
 Confluence Prep Academy Charter with Grand Center Arts Charter,2027-02-11,Collegiate School of Med-Bio Science with Central Visual and Performing Arts,,,,,,,,,,False,False
 Confluence Prep Academy Charter with Grand Center Arts Charter,2027-02-16,Maplewood-Richmond Hts.,,,,,,,,,,False,False
 Confluence Prep Academy Charter with Grand Center Arts Charter,2027-02-18,West Plains,,,,,,,,,,False,False
-Conway,2026-11-19,Stoutland,,,,,,,,,,False,False
+Conway,2026-11-19,Stoutland,,26,33,L,26.0,33.0,-0.0,0.0,-0.0,False,False
 Conway,2026-11-23,Cabool,,,,,,,,,,False,False
 Conway,2026-12-07,Plato,,,,,,,,,,False,False
 Conway,2026-12-08,Mansfield,,,,,,,,,,False,False
 Conway,2026-12-17,Niangua,,,,,,,,,,False,False
 Conway,2027-01-05,Richland,,,,,,,,,,False,False
 Conway,2027-01-07,Seymour,,,,,,,,,,False,False
-Conway,2027-01-18,New Covenant Academy,,,,,,,,,,False,False
+Conway,2027-01-18,New Covenant Academy,,,,,33.0,49.0,,,,False,False
 Conway,2027-01-19,School of the Ozarks,,,,,,,,,,False,False
 Conway,2027-01-21,Sparta,,,,,,,,,,False,False
 Conway,2027-02-01,Fordland,,,,,,,,,,False,False
 Conway,2027-02-04,Climax Springs,,,,,,,,,,False,False
-Conway,2027-02-09,Camdenton,,,,,,,,,,False,False
+Conway,2027-02-09,Camdenton,,,,,50.0,37.0,,,,False,False
 Conway,2027-02-11,Norwood,,,,,,,,,,False,False
 Conway,2027-02-15,Pleasant Hope,,,,,,,,,,False,False
 Conway,2027-02-16,Hartville,,,,,,,,,,False,False
@@ -1834,7 +1833,6 @@ Dadeville,2027-02-18,Stockton,,,,,,,,,,False,False
 DeKalb,2026-11-24,St. Joseph Christian,,,,,,,,,,False,False
 DeKalb,2026-12-08,Northland Christian,,,,,,,,,,False,False
 DeKalb,2026-12-10,King City,,,,,,,,,,False,False
-DeKalb,2026-12-15,Stewartsville,,,,,,,,,,False,False
 DeKalb,2026-12-15,Osborn with Stewartsville,,,,,,,,,,False,False
 DeKalb,2026-12-18,Northeast Nodaway,,,,,,,,,,False,False
 DeKalb,2026-12-21,South Holt with Craig,,,,,,,,,,False,False
@@ -2002,6 +2000,7 @@ Drexel with Miami (Amoret),2027-01-14,Sheldon,,,,,,,,,,False,False
 Drexel with Miami (Amoret),2027-01-15,Kingsville,,,,,,,,,,False,False
 Drexel with Miami (Amoret),2027-01-19,Butler,,,,,,,,,,False,False
 Drexel with Miami (Amoret),2027-01-22,Osceola,,,,,,,,,,False,False
+Drexel with Miami (Amoret),2027-01-22,Hume,,,,,,,,,,False,False
 Drexel with Miami (Amoret),2027-01-25,Chilhowee,,,,,,,,,,False,False
 Drexel with Miami (Amoret),2027-01-26,"Overland Christian(Overland Park, KS)",,,,,,,,,,False,False
 Drexel with Miami (Amoret),2027-02-02,Archie,,,,,,,,,,False,False
@@ -2029,7 +2028,7 @@ Duchesne,2027-02-19,Veritas Christian Academy,,,,,,,,,,False,False
 "Dupo(Dupo, IL)",2027-01-28,Hancock,,,,,,,,,,False,False
 Eagle Ridge Christian,2026-12-11,St. Paul Lutheran (Farmington),,,,,,,,,,False,False
 Eagle Ridge Christian,2026-12-15,Oak Ridge,,,,,,,,,,False,False
-East (Kansas City),2026-11-19,Paseo Academy,,24,18,W,24.0,18.0,-0.0,0.0,-0.0,False,False
+East (Kansas City),2026-11-19,Paseo Academy,,24,18,W,24.0,18.0,-0.0,0.0,0.0,False,False
 East (Kansas City),2026-11-30,"Kansas City Sumner(kansas city, KS)",,,,,,,,,,False,False
 East (Kansas City),2026-12-02,Cristo Rey,,,,,,,,,,False,False
 East (Kansas City),2026-12-07,Cristo Rey,,,,,,,,,,False,False
@@ -2061,7 +2060,6 @@ East Buchanan,2026-12-19,Rock Port,,,,,,,,,,False,False
 East Buchanan,2026-12-21,Lafayette County,,,,,,,,,,False,False
 East Buchanan,2027-01-05,Gallatin,,,,,,,,,,False,False
 East Buchanan,2027-01-06,Osborn with Stewartsville,,,,,,,,,,False,False
-East Buchanan,2027-01-06,Stewartsville,,,,,,,,,,False,False
 East Buchanan,2027-01-08,Plattsburg,,,,,,,,,,False,False
 East Buchanan,2027-01-12,Maryville,,,,,,,,,,False,False
 East Buchanan,2027-01-14,Ewing Marion Kauffman,,,,,,,,,,False,False
@@ -2268,7 +2266,7 @@ Excelsior Springs,2027-02-08,Marshall,,,,,,,,,,False,False
 Excelsior Springs,2027-02-09,Savannah,,,,,,,,,,False,False
 Excelsior Springs,2027-02-12,Oak Grove,,,,,,,,,,False,False
 Excelsior Springs,2027-02-16,Summit Christian Academy,,,,,,,,,,False,False
-Exeter,2026-11-19,New Covenant Academy,,40,65,L,40.0,65.0,0.0,-0.0,-0.0,False,False
+Exeter,2026-11-19,New Covenant Academy,,40,65,L,40.0,65.0,-0.0,-0.0,-0.0,False,False
 Exeter,2026-11-20,Marion C. Early,,,,,,,,,,False,False
 Exeter,2026-12-08,Bronaugh,,,,,,,,,,False,False
 Exeter,2026-12-10,School of the Ozarks,,,,,,,,,,False,False
@@ -2967,11 +2965,11 @@ Greenfield,2027-02-12,Pleasant Hope,,,,,,,,,,False,False
 Greenfield,2027-02-15,Aurora,,,,,,,,,,False,False
 Greenfield,2027-02-16,Fair Play,,,,,,,,,,False,False
 Greenfield,2027-02-18,Marionville,,,,,,,,,,False,False
-Greenville,2026-11-19,Clearwater,,,,,,,,,,False,False
+Greenville,2026-11-19,Clearwater,,53,63,L,53.0,63.0,0.0,-0.0,-0.0,False,False
 Greenville,2026-11-27,Van Buren,,,,,,,,,,False,False
 Greenville,2026-12-07,Campbell,,,,,,,,,,False,False
 Greenville,2026-12-15,Doniphan,,,,,,,,,,False,False
-Greenville,2027-01-05,Naylor,,,,,,,,,,False,False
+Greenville,2027-01-05,Naylor,,,,,41.0,64.0,,,,False,False
 Greenville,2027-01-07,Puxico,,,,,,,,,,False,False
 Greenville,2027-01-15,East Carter,,,,,,,,,,False,False
 Greenville,2027-01-19,Neelyville,,,,,,,,,,False,False
@@ -3562,7 +3560,7 @@ Hume,2027-01-05,Lakeland,,,,,,,,,,False,False
 Hume,2027-01-07,Drexel with Miami (Amoret),,,,,,,,,,False,False
 Hume,2027-01-08,Greenfield,,,,,,,,,,False,False
 Hume,2027-01-19,Chilhowee,,,,,,,,,,False,False
-Hume,2027-01-22,Miami (Amoret),,,,,,,,,,False,False
+Hume,2027-01-22,Drexel with Miami (Amoret),,,,,,,,,,False,False
 Hume,2027-02-01,"Pleasanton(Pleasanton, KS)",,,,,,,,,,False,False
 Hume,2027-02-05,Montrose with Ballard,,,,,,,,,,False,False
 Hume,2027-02-09,Midway,,,,,,,,,,False,False
@@ -3660,9 +3658,6 @@ Jamestown,2027-02-05,Bunceton,,,,,,,,,,False,False
 Jamestown,2027-02-12,Calvary Lutheran,,,,,,,,,,False,False
 Jamestown,2027-02-15,New Bloomfield,,,,,,,,,,False,False
 Jamestown,2027-02-18,Fayette,,,,,,,,,,False,False
-Jasper,2027-01-22,Midway,,,,,,,,,,False,False
-Jasper,2027-02-01,Rich Hill,,,,,,,,,,False,False
-Jasper,2027-02-09,Appleton City,,,,,,,,,,False,False
 "Jayhawk-Linn(Mound City, KS)",2026-12-04,Midway,,,,,,,,,,False,False
 Jefferson (Conception) with South Nodaway,2026-11-24,South Harrison,,,,,,,,,,False,False
 Jefferson (Conception) with South Nodaway,2026-12-08,Savannah,,,,,,,,,,False,False
@@ -5067,8 +5062,11 @@ McAuley Catholic with Jasper,2027-01-15,Verona,,,,,,,,,,False,False
 McAuley Catholic with Jasper,2027-01-18,Verona,,,,,,,,,,False,False
 McAuley Catholic with Jasper,2027-01-19,Wheaton,,,,,,,,,,False,False
 McAuley Catholic with Jasper,2027-01-21,Greenwood,,,,,,,,,,False,False
+McAuley Catholic with Jasper,2027-01-22,Midway,,,,,,,,,,False,False
 McAuley Catholic with Jasper,2027-01-28,New Covenant Academy,,,,,,,,,,False,False
 McAuley Catholic with Jasper,2027-01-29,Exeter,,,,,,,,,,False,False
+McAuley Catholic with Jasper,2027-02-01,Rich Hill,,,,,,,,,,False,False
+McAuley Catholic with Jasper,2027-02-09,Appleton City,,,,,,,,,,False,False
 McAuley Catholic with Jasper,2027-02-09,Bronaugh,,,,,,,,,,False,False
 McAuley Catholic with Jasper,2027-02-12,New Heights Christian,,,,,,,,,,False,False
 McAuley Catholic with Jasper,2027-02-16,Southwest (Washburn),,,,,,,,,,False,False
@@ -5244,7 +5242,6 @@ Mexico,2027-02-12,Capital City,,,,,,,,,,False,False
 Mexico,2027-02-16,Fulton,,,,,,,,,,False,False
 Mexico,2027-02-23,Hannibal,,,,,,,,,,False,False
 Mexico,2027-02-25,Rolla,,,,,,,,,,False,False
-Miami (Amoret),2027-01-22,Hume,,,,,,,,,,False,False
 Mid-Buchanan,2026-11-24,Ewing Marion Kauffman,,,,,,,,,,False,False
 Mid-Buchanan,2026-12-15,North Andrew,,,,,,,,,,False,False
 Mid-Buchanan,2026-12-18,Lawson,,,,,,,,,,False,False
@@ -5274,7 +5271,7 @@ Midway,2027-01-11,Wellington-Napoleon,,,,,,,,,,False,False
 Midway,2027-01-12,Chilhowee,,,,,,,,,,False,False
 Midway,2027-01-14,Hardin-Central with Norborne,,,,,,,,,,False,False
 Midway,2027-01-19,Appleton City,,,,,,,,,,False,False
-Midway,2027-01-22,Jasper,,,,,,,,,,False,False
+Midway,2027-01-22,McAuley Catholic with Jasper,,,,,,,,,,False,False
 Midway,2027-02-02,Lakeland,,,,,,,,,,False,False
 Midway,2027-02-04,Northeast Vernon County,,,,,,,,,,False,False
 Midway,2027-02-05,Rich Hill,,,,,,,,,,False,False
@@ -5356,7 +5353,6 @@ Moberly,2027-01-18,Marshall,,,,,,,,,,False,False
 Moberly,2027-01-21,Bowling Green,,,,,,,,,,False,False
 Moberly,2027-02-02,Hallsville,,,,,,,,,,False,False
 Moberly,2027-02-05,Mexico,,,,,,,,,,False,False
-Moberly,2027-02-11,Christian Fellowship Sr.,,,,,,,,,,False,False
 Moberly,2027-02-12,Westran,,,,,,,,,,False,False
 Moberly,2027-02-16,Marshall,,,,,,,,,,False,False
 Moberly,2027-02-22,Kirksville,,,,,,,,,,False,False
@@ -5453,7 +5449,6 @@ Mound City,2026-12-18,Tarkio with Fairfax,,,,,,,,,,False,False
 Mound City,2026-12-22,Jefferson (Conception) with South Nodaway,,,,,,,,,,False,False
 Mound City,2027-01-05,South Holt with Craig,,,,,,,,,,False,False
 Mound City,2027-01-08,Union Star,,,,,,,,,,False,False
-Mound City,2027-01-19,Stewartsville,,,,,,,,,,False,False
 Mound City,2027-01-19,Osborn with Stewartsville,,,,,,,,,,False,False
 Mound City,2027-01-22,Northeast Nodaway,,,,,,,,,,False,False
 Mound City,2027-02-01,"Hamburg(Hamburg, IA)",,,,,,,,,,False,False
@@ -5509,12 +5504,12 @@ Naylor,2026-12-14,Doniphan,,,,,,,,,,False,False
 Naylor,2026-12-15,"Armorel(Armorel, AR)",,,,,,,,,,False,False
 Naylor,2026-12-18,"Ridgefield Christian(Jonesboro, AR)",,,,,,,,,,False,False
 Naylor,2027-01-04,Campbell,,,,,,,,,,False,False
-Naylor,2027-01-05,Greenville,,,,,,,,,,False,False
+Naylor,2027-01-05,Greenville,,,,,64.0,41.0,,,,False,False
 Naylor,2027-01-07,Neelyville,,,,,,,,,,False,False
 Naylor,2027-01-14,South Iron,,,,,,,,,,False,False
 Naylor,2027-01-19,East Carter,,,,,,,,,,False,False
 Naylor,2027-01-22,Holcomb,,,,,,,,,,False,False
-Naylor,2027-01-25,Clearwater,,,,,,,,,,False,False
+Naylor,2027-01-25,Clearwater,,,,,59.0,46.0,,,,False,False
 Naylor,2027-01-29,Lesterville,,,,,,,,,,False,False
 Naylor,2027-02-02,Scott County Central,,,,,,,,,,False,False
 Naylor,2027-02-04,Van Buren,,,,,,,,,,False,False
@@ -5627,7 +5622,7 @@ New Covenant Academy,2026-12-17,Fair Play,,,,,,,,,,False,False
 New Covenant Academy,2027-01-08,Billings,,,,,,,,,,False,False
 New Covenant Academy,2027-01-14,Spokane,,,,,,,,,,False,False
 New Covenant Academy,2027-01-15,Hurley,,,,,,,,,,False,False
-New Covenant Academy,2027-01-18,Conway,,,,,,,,,,False,False
+New Covenant Academy,2027-01-18,Conway,,,,,49.0,33.0,,,,False,False
 New Covenant Academy,2027-01-28,McAuley Catholic with Jasper,,,,,,,,,,False,False
 New Covenant Academy,2027-02-04,Niangua,,,,,,,,,,False,False
 New Covenant Academy,2027-02-05,Verona,,,,,,,,,,False,False
@@ -5778,7 +5773,6 @@ North Andrew,2027-02-16,Rock Port,,,,,,,,,,False,False
 North Andrew,2027-02-18,Tarkio with Fairfax,,,,,,,,,,False,False
 North Callaway,2026-11-21,Community,,,,,,,,,,False,False
 North Callaway,2026-12-01,Centralia,,,,,,,,,,False,False
-North Callaway,2026-12-03,Silex,,,,,,,,,,False,False
 North Callaway,2026-12-04,Silex,,,,,,,,,,False,False
 North Callaway,2026-12-15,Van-Far,,,,,,,,,,False,False
 North Callaway,2026-12-17,Louisiana,,,,,,,,,,False,False
@@ -5854,7 +5848,6 @@ North MO Knights HSA,2027-02-09,Milan,,,,,,,,,,False,False
 North Nodaway,2026-11-24,North Harrison,,,,,,,,,,False,False
 North Nodaway,2026-12-07,Worth County,,,,,,,,,,False,False
 North Nodaway,2026-12-10,Osborn with Stewartsville,,,,,,,,,,False,False
-North Nodaway,2026-12-10,Stewartsville,,,,,,,,,,False,False
 North Nodaway,2026-12-15,Northeast Nodaway,,,,,,,,,,False,False
 North Nodaway,2026-12-18,Cainsville with Ridgeway,,,,,,,,,,False,False
 North Nodaway,2026-12-22,Pattonsburg,,,,,,,,,,False,False
@@ -5977,7 +5970,6 @@ Northeast Nodaway,2027-01-22,Mound City,,,,,,,,,,False,False
 Northeast Nodaway,2027-02-02,Union Star,,,,,,,,,,False,False
 Northeast Nodaway,2027-02-05,Tarkio with Fairfax,,,,,,,,,,False,False
 Northeast Nodaway,2027-02-09,North Harrison,,,,,,,,,,False,False
-Northeast Nodaway,2027-02-12,Stewartsville,,,,,,,,,,False,False
 Northeast Nodaway,2027-02-12,Osborn with Stewartsville,,,,,,,,,,False,False
 Northeast Nodaway,2027-02-16,South Holt with Craig,,,,,,,,,,False,False
 Northeast Vernon County,2026-11-23,Rich Hill,,,,,,,,,,False,False
@@ -6645,7 +6637,6 @@ Pattonsburg,2027-02-02,Worth County,,,,,,,,,,False,False
 Pattonsburg,2027-02-05,King City,,,,,,,,,,False,False
 Pattonsburg,2027-02-11,Plattsburg,,,,,,,,,,False,False
 Pattonsburg,2027-02-16,Osborn with Stewartsville,,,,,,,,,,False,False
-Pattonsburg,2027-02-16,Stewartsville,,,,,,,,,,False,False
 Pattonsburg,2027-02-18,Gilman City with Tri-County,,,,,,,,,,False,False
 Pattonville,2026-12-03,STEAM Academy,,,,,,,,,,False,False
 Pattonville,2026-12-07,Nerinx Hall,,,,,,,,,,False,False
@@ -7165,7 +7156,7 @@ Rich Hill,2027-01-05,Liberal,,,,,,,,,,False,False
 Rich Hill,2027-01-08,Lockwood,,,,,,,,,,False,False
 Rich Hill,2027-01-19,Osceola,,,,,,,,,,False,False
 Rich Hill,2027-01-22,Wheatland,,,,,,,,,,False,False
-Rich Hill,2027-02-01,Jasper,,,,,,,,,,False,False
+Rich Hill,2027-02-01,McAuley Catholic with Jasper,,,,,,,,,,False,False
 Rich Hill,2027-02-05,Midway,,,,,,,,,,False,False
 Rich Hill,2027-02-09,Drexel with Miami (Amoret),,,,,,,,,,False,False
 Rich Hill,2027-02-10,Kingsville,,,,,,,,,,False,False
@@ -7257,7 +7248,6 @@ Rock Port,2026-12-10,Faith Christian Academy,,,,,,,,,,False,False
 Rock Port,2026-12-11,Barstow,,,,,,,,,,False,False
 Rock Port,2026-12-15,South Holt with Craig,,,,,,,,,,False,False
 Rock Port,2026-12-18,Osborn with Stewartsville,,,,,,,,,,False,False
-Rock Port,2026-12-18,Stewartsville,,,,,,,,,,False,False
 Rock Port,2026-12-19,East Buchanan,,,,,,,,,,False,False
 Rock Port,2026-12-21,Lexington,,,,,,,,,,False,False
 Rock Port,2026-12-21,Union Star,,,,,,,,,,False,False
@@ -7764,7 +7754,6 @@ Sikeston,2027-02-17,Central (Cape Girardeau),,,,,,,,,,False,False
 Sikeston,2027-02-22,Poplar Bluff,,,,,,,,,,False,False
 Sikeston,2027-02-24,Jackson,,,,,,,,,,False,False
 Silex,2026-12-01,Warrenton,,,,,,,,,,False,False
-Silex,2026-12-03,North Callaway,,,,,,,,,,False,False
 Silex,2026-12-04,North Callaway,,,,,,,,,,False,False
 Silex,2026-12-08,Van-Far,,,,,,,,,,False,False
 Silex,2026-12-10,North Point,,,,,,,,,,False,False
@@ -8471,14 +8460,6 @@ Steelville,2027-02-02,Crocker,,,,,,,,,,False,False
 Steelville,2027-02-08,Belle,,,,,,,,,,False,False
 Steelville,2027-02-11,Salem,,,,,,,,,,False,False
 Steelville,2027-02-16,West County,,,,,,,,,,False,False
-Stewartsville,2026-12-10,North Nodaway,,,,,,,,,,False,False
-Stewartsville,2026-12-15,DeKalb,,,,,,,,,,False,False
-Stewartsville,2026-12-18,Rock Port,,,,,,,,,,False,False
-Stewartsville,2027-01-06,East Buchanan,,,,,,,,,,False,False
-Stewartsville,2027-01-19,Mound City,,,,,,,,,,False,False
-Stewartsville,2027-02-05,Union Star,,,,,,,,,,False,False
-Stewartsville,2027-02-12,Northeast Nodaway,,,,,,,,,,False,False
-Stewartsville,2027-02-16,Pattonsburg,,,,,,,,,,False,False
 Stockton,2026-12-08,Buffalo,,,,,,,,,,False,False
 Stockton,2026-12-10,Lamar,,,,,,,,,,False,False
 Stockton,2026-12-14,Pleasant Hope,,,,,,,,,,False,False
@@ -8496,7 +8477,7 @@ Stockton,2027-02-08,Miller,,,,,,,,,,False,False
 Stockton,2027-02-11,Ash Grove,,,,,,,,,,False,False
 Stockton,2027-02-15,Butler,,,,,,,,,,False,False
 Stockton,2027-02-18,Dadeville,,,,,,,,,,False,False
-Stoutland,2026-11-19,Conway,,,,,,,,,,False,False
+Stoutland,2026-11-19,Conway,,33,26,W,33.0,26.0,-0.0,0.0,0.0,False,False
 Stoutland,2026-11-23,Macks Creek,,,,,,,,,,False,False
 Stoutland,2026-12-14,Calvary Lutheran,,,,,,,,,,False,False
 Stoutland,2026-12-17,Wheatland,,,,,,,,,,False,False
@@ -8512,7 +8493,7 @@ Stoutland,2027-02-09,Plato,,,,,,,,,,False,False
 Stoutland,2027-02-11,Climax Springs,,,,,,,,,,False,False
 Stoutland,2027-02-12,Crocker,,,,,,,,,,False,False
 Stoutland,2027-02-15,Newburg,,,,,,,,,,False,False
-Stoutland,2027-02-18,Vienna,,,,,,,,,,False,False
+Stoutland,2027-02-18,Vienna,,,,,39.0,44.0,,,,False,False
 Stover,2026-11-20,Macks Creek,,,,,,,,,,False,False
 Stover,2026-11-30,Eugene,,,,,,,,,,False,False
 Stover,2026-12-08,Russellville,,,,,,,,,,False,False
@@ -8872,7 +8853,6 @@ Union Star,2027-01-19,Northland Christian,,,,,,,,,,False,False
 Union Star,2027-01-22,South Holt with Craig,,,,,,,,,,False,False
 Union Star,2027-02-02,Northeast Nodaway,,,,,,,,,,False,False
 Union Star,2027-02-05,Osborn with Stewartsville,,,,,,,,,,False,False
-Union Star,2027-02-05,Stewartsville,,,,,,,,,,False,False
 Union Star,2027-02-09,North Nodaway,,,,,,,,,,False,False
 Union Star,2027-02-12,DeKalb,,,,,,,,,,False,False
 Union Star,2027-02-16,Mercer,,,,,,,,,,False,False
@@ -9112,7 +9092,7 @@ Viburnum,2027-01-19,Newburg,,,,,,,,,,False,False
 Viburnum,2027-02-08,South Iron,,,,,,,,,,False,False
 Viburnum,2027-02-09,Ellington,,,,,,,,,,False,False
 Viburnum,2027-02-18,Bunker,,,,,,,,,,False,False
-Vienna,2026-11-19,Russellville,,62,45,W,62.0,45.0,0.0,0.0,0.0,False,False
+Vienna,2026-11-19,Russellville,,62,45,W,62.0,45.0,0.0,-0.0,0.0,False,False
 Vienna,2026-11-23,Fatima,,,,,,,,,,False,False
 Vienna,2026-11-24,New Bloomfield,,,,,,,,,,False,False
 Vienna,2026-12-01,Cuba,,,,,,,,,,False,False
@@ -9130,7 +9110,7 @@ Vienna,2027-02-04,Jamestown,,,,,,,,,,False,False
 Vienna,2027-02-09,Tuscumbia,,,,,,,,,,False,False
 Vienna,2027-02-11,St. Elizabeth,,,,,,,,,,False,False
 Vienna,2027-02-16,Crocker,,,,,,,,,,False,False
-Vienna,2027-02-18,Stoutland,,,,,,,,,,False,False
+Vienna,2027-02-18,Stoutland,,,,,44.0,39.0,,,,False,False
 Villa Duchesne,2026-11-19,Lutheran South,,,,,,,,,,False,False
 Villa Duchesne,2026-11-30,Veritas Christian Academy,,,,,,,,,,False,False
 Villa Duchesne,2026-12-02,Valley Park,,,,,,,,,,False,False

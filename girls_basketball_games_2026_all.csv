@@ -1,6 +1,9 @@
 date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtime
+2026-11-19,Chadwick,True,74,Aurora,True,41,False,False
 2026-11-19,Palmyra,True,57,Bowling Green,True,17,False,False
 2026-11-19,Naylor,True,65,Caruthersville,True,29,False,False
+2026-11-19,Greenville,True,53,Clearwater,True,63,False,False
+2026-11-19,Stoutland,True,33,Conway,True,26,False,False
 2026-11-19,Northeast (Kansas City),True,56,Cristo Rey,False,2,False,False
 2026-11-19,Paseo Academy,True,18,East (Kansas City),True,24,False,False
 2026-11-19,Believe Acad Charter,True,32,Gateway with Soldan International Studies,True,35,False,False
@@ -12,10 +15,7 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-11-19,Summit Christian Academy,True,24,Smith-Cotton,True,46,False,False
 2026-11-19,Russellville,True,45,Vienna,True,62,False,False
 2026-11-19,Mountain Grove,True,,Alton,True,,False,False
-2026-11-19,Chadwick,True,,Aurora,True,,False,False
 2026-11-19,Charleston,True,,Bloomfield with Richland (Essex),True,,False,False
-2026-11-19,Greenville,True,,Clearwater,True,,False,False
-2026-11-19,Stoutland,True,,Conway,True,,False,False
 2026-11-19,Central (Kansas City),True,,Crossroads Prep Charter,False,,False,False
 2026-11-19,"Kansas City East Christian(Kansas City, KS)",False,,Faith Christian Academy,True,,False,False
 2026-11-19,Butler,True,,Harrisonville,True,,False,False
@@ -491,7 +491,6 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-12-03,Cameron,True,,Plattsburg,True,,False,False
 2026-12-03,Pembroke Hill,True,,Raytown,True,,False,False
 2026-12-03,Calvary Lutheran,True,,Sacred Heart,True,,False,False
-2026-12-03,North Callaway,True,,Silex,True,,False,False
 2026-12-03,Orrick,True,,Southwest (Livingston County) with Breckenridge,True,,False,False
 2026-12-03,Lutheran South,True,,St. Francis Borgia,True,,False,False
 2026-12-03,Union,True,,St. James,True,,False,False
@@ -906,7 +905,6 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-12-10,Crocker,True,,St. Elizabeth,True,,False,False
 2026-12-10,Miller Career Academy,True,,St. Francis Borgia,True,,False,False
 2026-12-10,Northeast Nodaway,True,,Stanberry,True,,False,False
-2026-12-10,North Nodaway,True,,Stewartsville,False,,False,False
 2026-12-10,Warsaw,True,,Stover,True,,False,False
 2026-12-10,Hillcrest,True,,Strafford,True,,False,False
 2026-12-10,Ft. Zumwalt West,True,,Timberland,True,,False,False
@@ -1140,7 +1138,6 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-12-15,Warsaw,True,,Cole Camp,True,,False,False
 2026-12-15,Sherwood,True,,Crest Ridge,True,,False,False
 2026-12-15,DeLaSalle Charter (KC),True,,Crossroads Prep Charter,False,,False,False
-2026-12-15,Stewartsville,False,,DeKalb,True,,False,False
 2026-12-15,Osborn with Stewartsville,True,,DeKalb,True,,False,False
 2026-12-15,Greenville,True,,Doniphan,True,,False,False
 2026-12-15,Lesterville,True,,East Carter,True,,False,False
@@ -1447,7 +1444,6 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-12-18,Valley with Bismarck,True,,South Iron,True,,False,False
 2026-12-18,Brookfield,True,,South Shelby,True,,False,False
 2026-12-18,"Wichita East(Wichita, KS)",False,,St. Teresa's Academy,True,,False,False
-2026-12-18,Rock Port,True,,Stewartsville,False,,False,False
 2026-12-18,Richland,True,,Stoutland,True,,False,False
 2026-12-18,Mound City,True,,Tarkio with Fairfax,True,,False,False
 2026-12-18,Battle,True,,Timberland,True,,False,False
@@ -1789,7 +1785,6 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2027-01-06,Hancock,True,,Collegiate School of Med-Bio Science with Central Visual and Performing Arts,True,,False,False
 2027-01-06,Crest Ridge,True,,Concordia,True,,False,False
 2027-01-06,Osborn with Stewartsville,True,,East Buchanan,True,,False,False
-2027-01-06,Stewartsville,False,,East Buchanan,True,,False,False
 2027-01-06,Lindbergh,True,,Eureka,True,,False,False
 2027-01-06,Francis Howell,True,,Ft. Zumwalt South,True,,False,False
 2027-01-06,La Plata,True,,Higbee,True,,False,False
@@ -2569,7 +2564,6 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2027-01-19,Marceline,True,,Milan,True,,False,False
 2027-01-19,West Plains,True,,Miller Career Academy,True,,False,False
 2027-01-19,Concordia,True,,Montrose with Ballard,True,,False,False
-2027-01-19,Stewartsville,False,,Mound City,True,,False,False
 2027-01-19,Osborn with Stewartsville,True,,Mound City,True,,False,False
 2027-01-19,East Carter,True,,Naylor,True,,False,False
 2027-01-19,Webb City,True,,Nevada,True,,False,False
@@ -2806,10 +2800,10 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2027-01-22,Slater with Malta Bend,True,,Madison,True,,False,False
 2027-01-22,Macon,True,,Marshall,True,,False,False
 2027-01-22,Gallatin,True,,Maysville,True,,False,False
-2027-01-22,Hume,True,,Miami (Amoret),False,,False,False
+2027-01-22,Hume,True,,Drexel with Miami (Amoret),True,,False,False
 2027-01-22,Marquette,True,,MICDS,True,,False,False
 2027-01-22,North Platte,True,,Mid-Buchanan,True,,False,False
-2027-01-22,Jasper,False,,Midway,True,,False,False
+2027-01-22,McAuley Catholic with Jasper,True,,Midway,True,,False,False
 2027-01-22,Visitation Academy,True,,Nerinx Hall,True,,False,False
 2027-01-22,Russellville,True,,New Bloomfield,True,,False,False
 2027-01-22,Jamestown,True,,New Franklin,True,,False,False
@@ -3254,7 +3248,7 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2027-02-01,"Pleasanton(Pleasanton, KS)",False,,Hume,True,,False,False
 2027-02-01,Chadwick,True,,Hurley,True,,False,False
 2027-02-01,Plato,True,,Iberia,True,,False,False
-2027-02-01,Rich Hill,True,,Jasper,False,,False,False
+2027-02-01,Rich Hill,True,,McAuley Catholic with Jasper,True,,False,False
 2027-02-01,Charleston,True,,Kelly,True,,False,False
 2027-02-01,Carthage,True,,Kickapoo,True,,False,False
 2027-02-01,Knob Noster,True,,Lexington,True,,False,False
@@ -3679,7 +3673,6 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2027-02-05,Stanberry,True,,Trenton,True,,False,False
 2027-02-05,Fort Osage,True,,Truman,True,,False,False
 2027-02-05,Osborn with Stewartsville,True,,Union Star,True,,False,False
-2027-02-05,Stewartsville,False,,Union Star,True,,False,False
 2027-02-05,Barstow,True,,University Academy Charter,True,,False,False
 2027-02-05,Brentwood,True,,Valley Park,True,,False,False
 2027-02-05,Summit Christian Academy,True,,Van Horn,True,,False,False
@@ -3852,7 +3845,7 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2027-02-09,Macks Creek,True,,Hermitage,True,,False,False
 2027-02-09,St. Charles,True,,Holt,True,,False,False
 2027-02-09,"Belleville East(Belleville, IL)",False,,Incarnate Word Academy,True,,False,False
-2027-02-09,Appleton City,True,,Jasper,False,,False,False
+2027-02-09,Appleton City,True,,McAuley Catholic with Jasper,True,,False,False
 2027-02-09,West Nodaway with Nodaway-Holt,True,,Jefferson (Conception) with South Nodaway,True,,False,False
 2027-02-09,Normandy Collaborative,True,,Jennings,True,,False,False
 2027-02-09,Confluence Prep Academy Charter with Grand Center Arts Charter,True,,John Burroughs,True,,False,False
@@ -4043,7 +4036,6 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2027-02-11,King City,True,,Maysville,True,,False,False
 2027-02-11,Hazelwood East,True,,McCluer North,False,,False,False
 2027-02-11,Fox,True,,Mehlville,True,,False,False
-2027-02-11,Christian Fellowship Sr.,False,,Moberly,True,,False,False
 2027-02-11,Louisiana,True,,Montgomery County,True,,False,False
 2027-02-11,Sherwood,True,,Montrose with Ballard,True,,False,False
 2027-02-11,Fordland,True,,Mountain Grove,True,,False,False
@@ -4171,7 +4163,6 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2027-02-12,Oak Park,True,,North Kansas City,True,,False,False
 2027-02-12,South Holt with Craig,True,,North Nodaway,True,,False,False
 2027-02-12,East (Kansas City),True,,Northeast (Kansas City),True,,False,False
-2027-02-12,Stewartsville,False,,Northeast Nodaway,True,,False,False
 2027-02-12,Osborn with Stewartsville,True,,Northeast Nodaway,True,,False,False
 2027-02-12,Hermitage,True,,Northeast Vernon County,True,,False,False
 2027-02-12,"KAW Valley Game(Kansas city, KS)",False,,Northland Christian,True,,False,False
@@ -4447,7 +4438,6 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2027-02-16,Oak Grove,True,,St. Michael the Archangel,True,,False,False
 2027-02-16,Crystal City,True,,Ste. Genevieve,True,,False,False
 2027-02-16,West County,True,,Steelville,True,,False,False
-2027-02-16,Pattonsburg,True,,Stewartsville,False,,False,False
 2027-02-16,La Monte,True,,Stover,True,,False,False
 2027-02-16,Madison,True,,Sturgeon,True,,False,False
 2027-02-16,Crest Ridge,True,,Sweet Springs,True,,False,False

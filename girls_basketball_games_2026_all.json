@@ -1,6 +1,17 @@
 [
   {
     "date": "2026-11-19",
+    "team1": "Chadwick",
+    "team1_classified": true,
+    "score1": 74,
+    "team2": "Aurora",
+    "team2_classified": true,
+    "score2": 41,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-19",
     "team1": "Palmyra",
     "team1_classified": true,
     "score1": 57,
@@ -18,6 +29,28 @@
     "team2": "Caruthersville",
     "team2_classified": true,
     "score2": 29,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-19",
+    "team1": "Greenville",
+    "team1_classified": true,
+    "score1": 53,
+    "team2": "Clearwater",
+    "team2_classified": true,
+    "score2": 63,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-19",
+    "team1": "Stoutland",
+    "team1_classified": true,
+    "score1": 33,
+    "team2": "Conway",
+    "team2_classified": true,
+    "score2": 26,
     "forfeit": false,
     "overtime": false
   },
@@ -144,43 +177,10 @@
   },
   {
     "date": "2026-11-19",
-    "team1": "Chadwick",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "Aurora",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-19",
     "team1": "Charleston",
     "team1_classified": true,
     "score1": null,
     "team2": "Bloomfield with Richland (Essex)",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-19",
-    "team1": "Greenville",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "Clearwater",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-19",
-    "team1": "Stoutland",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "Conway",
     "team2_classified": true,
     "score2": null,
     "forfeit": false,
@@ -5413,17 +5413,6 @@
   },
   {
     "date": "2026-12-03",
-    "team1": "North Callaway",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "Silex",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-12-03",
     "team1": "Orrick",
     "team1_classified": true,
     "score1": null,
@@ -9978,17 +9967,6 @@
   },
   {
     "date": "2026-12-10",
-    "team1": "North Nodaway",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "Stewartsville",
-    "team2_classified": false,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-12-10",
     "team1": "Warsaw",
     "team1_classified": true,
     "score1": null,
@@ -12546,17 +12524,6 @@
     "score1": null,
     "team2": "Crossroads Prep Charter",
     "team2_classified": false,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-12-15",
-    "team1": "Stewartsville",
-    "team1_classified": false,
-    "score1": null,
-    "team2": "DeKalb",
-    "team2_classified": true,
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -15923,17 +15890,6 @@
     "score1": null,
     "team2": "St. Teresa's Academy",
     "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-12-18",
-    "team1": "Rock Port",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "Stewartsville",
-    "team2_classified": false,
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -19682,17 +19638,6 @@
     "date": "2027-01-06",
     "team1": "Osborn with Stewartsville",
     "team1_classified": true,
-    "score1": null,
-    "team2": "East Buchanan",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2027-01-06",
-    "team1": "Stewartsville",
-    "team1_classified": false,
     "score1": null,
     "team2": "East Buchanan",
     "team2_classified": true,
@@ -28271,17 +28216,6 @@
   },
   {
     "date": "2027-01-19",
-    "team1": "Stewartsville",
-    "team1_classified": false,
-    "score1": null,
-    "team2": "Mound City",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2027-01-19",
     "team1": "Osborn with Stewartsville",
     "team1_classified": true,
     "score1": null,
@@ -30881,8 +30815,8 @@
     "team1": "Hume",
     "team1_classified": true,
     "score1": null,
-    "team2": "Miami (Amoret)",
-    "team2_classified": false,
+    "team2": "Drexel with Miami (Amoret)",
+    "team2_classified": true,
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -30911,8 +30845,8 @@
   },
   {
     "date": "2027-01-22",
-    "team1": "Jasper",
-    "team1_classified": false,
+    "team1": "McAuley Catholic with Jasper",
+    "team1_classified": true,
     "score1": null,
     "team2": "Midway",
     "team2_classified": true,
@@ -35809,8 +35743,8 @@
     "team1": "Rich Hill",
     "team1_classified": true,
     "score1": null,
-    "team2": "Jasper",
-    "team2_classified": false,
+    "team2": "McAuley Catholic with Jasper",
+    "team2_classified": true,
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -40481,17 +40415,6 @@
   },
   {
     "date": "2027-02-05",
-    "team1": "Stewartsville",
-    "team1_classified": false,
-    "score1": null,
-    "team2": "Union Star",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2027-02-05",
     "team1": "Barstow",
     "team1_classified": true,
     "score1": null,
@@ -42387,8 +42310,8 @@
     "team1": "Appleton City",
     "team1_classified": true,
     "score1": null,
-    "team2": "Jasper",
-    "team2_classified": false,
+    "team2": "McAuley Catholic with Jasper",
+    "team2_classified": true,
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -44485,17 +44408,6 @@
   },
   {
     "date": "2027-02-11",
-    "team1": "Christian Fellowship Sr.",
-    "team1_classified": false,
-    "score1": null,
-    "team2": "Moberly",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2027-02-11",
     "team1": "Louisiana",
     "team1_classified": true,
     "score1": null,
@@ -45886,17 +45798,6 @@
     "team1_classified": true,
     "score1": null,
     "team2": "Northeast (Kansas City)",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2027-02-12",
-    "team1": "Stewartsville",
-    "team1_classified": false,
-    "score1": null,
-    "team2": "Northeast Nodaway",
     "team2_classified": true,
     "score2": null,
     "forfeit": false,
@@ -48923,17 +48824,6 @@
     "score1": null,
     "team2": "Steelville",
     "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2027-02-16",
-    "team1": "Pattonsburg",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "Stewartsville",
-    "team2_classified": false,
     "score2": null,
     "forfeit": false,
     "overtime": false

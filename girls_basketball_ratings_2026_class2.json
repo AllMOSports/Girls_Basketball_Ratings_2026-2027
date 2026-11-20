@@ -1,6 +1,6 @@
 {
-  "last_updated": "November 20, 2026 at 03:18 PM",
-  "league_average": 41.2,
+  "last_updated": "November 20, 2026 at 03:46 PM",
+  "league_average": 42.85,
   "classification": 2,
   "teams": [
     {
@@ -9,20 +9,31 @@
       "classification": 2,
       "district": 9,
       "ovr_rating": 8.5,
-      "off_rating": 10.4,
+      "off_rating": 9.58,
       "off_rank": 1,
-      "def_rating": -1.9,
+      "def_rating": -1.08,
       "def_rank": 1
     },
     {
       "ovr_rank": 2,
+      "school": "Greenville",
+      "classification": 2,
+      "district": 3,
+      "ovr_rating": -5.0,
+      "off_rating": 5.08,
+      "off_rank": 2,
+      "def_rating": -10.08,
+      "def_rank": 3
+    },
+    {
+      "ovr_rank": 3,
       "school": "Russellville",
       "classification": 2,
       "district": 8,
       "ovr_rating": -8.5,
-      "off_rating": 1.9,
-      "off_rank": 2,
-      "def_rating": -10.4,
+      "off_rating": 1.08,
+      "off_rank": 3,
+      "def_rating": -9.58,
       "def_rank": 2
     }
   ]

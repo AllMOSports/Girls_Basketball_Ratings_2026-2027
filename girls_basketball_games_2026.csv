@@ -1,6 +1,9 @@
 date,team1,score1,team2,score2,forfeit,overtime
+2026-11-19,Chadwick,74,Aurora,41,False,False
 2026-11-19,Palmyra,57,Bowling Green,17,False,False
 2026-11-19,Naylor,65,Caruthersville,29,False,False
+2026-11-19,Greenville,53,Clearwater,63,False,False
+2026-11-19,Stoutland,33,Conway,26,False,False
 2026-11-19,Paseo Academy,18,East (Kansas City),24,False,False
 2026-11-19,Believe Acad Charter,32,Gateway with Soldan International Studies,35,False,False
 2026-11-19,Camdenton,41,Jefferson City,74,False,False
@@ -10,10 +13,7 @@ date,team1,score1,team2,score2,forfeit,overtime
 2026-11-19,Summit Christian Academy,24,Smith-Cotton,46,False,False
 2026-11-19,Russellville,45,Vienna,62,False,False
 2026-11-19,Mountain Grove,,Alton,,False,False
-2026-11-19,Chadwick,,Aurora,,False,False
 2026-11-19,Charleston,,Bloomfield with Richland (Essex),,False,False
-2026-11-19,Greenville,,Clearwater,,False,False
-2026-11-19,Stoutland,,Conway,,False,False
 2026-11-19,Butler,,Harrisonville,,False,False
 2026-11-19,Bakersfield,,Liberty (Mountain View),,False,False
 2026-11-19,Villa Duchesne,,Lutheran South,,False,False
@@ -435,7 +435,6 @@ date,team1,score1,team2,score2,forfeit,overtime
 2026-12-03,Cameron,,Plattsburg,,False,False
 2026-12-03,Pembroke Hill,,Raytown,,False,False
 2026-12-03,Calvary Lutheran,,Sacred Heart,,False,False
-2026-12-03,North Callaway,,Silex,,False,False
 2026-12-03,Orrick,,Southwest (Livingston County) with Breckenridge,,False,False
 2026-12-03,Lutheran South,,St. Francis Borgia,,False,False
 2026-12-03,Union,,St. James,,False,False
@@ -2462,8 +2461,10 @@ date,team1,score1,team2,score2,forfeit,overtime
 2027-01-22,Slater with Malta Bend,,Madison,,False,False
 2027-01-22,Macon,,Marshall,,False,False
 2027-01-22,Gallatin,,Maysville,,False,False
+2027-01-22,Hume,,Drexel with Miami (Amoret),,False,False
 2027-01-22,Marquette,,MICDS,,False,False
 2027-01-22,North Platte,,Mid-Buchanan,,False,False
+2027-01-22,McAuley Catholic with Jasper,,Midway,,False,False
 2027-01-22,Visitation Academy,,Nerinx Hall,,False,False
 2027-01-22,Russellville,,New Bloomfield,,False,False
 2027-01-22,Jamestown,,New Franklin,,False,False
@@ -2854,6 +2855,7 @@ date,team1,score1,team2,score2,forfeit,overtime
 2027-02-01,Mountain Grove,,Houston,,False,False
 2027-02-01,Chadwick,,Hurley,,False,False
 2027-02-01,Plato,,Iberia,,False,False
+2027-02-01,Rich Hill,,McAuley Catholic with Jasper,,False,False
 2027-02-01,Charleston,,Kelly,,False,False
 2027-02-01,Carthage,,Kickapoo,,False,False
 2027-02-01,Knob Noster,,Lexington,,False,False
@@ -3405,6 +3407,7 @@ date,team1,score1,team2,score2,forfeit,overtime
 2027-02-09,Fox,,Herculaneum,,False,False
 2027-02-09,Macks Creek,,Hermitage,,False,False
 2027-02-09,St. Charles,,Holt,,False,False
+2027-02-09,Appleton City,,McAuley Catholic with Jasper,,False,False
 2027-02-09,West Nodaway with Nodaway-Holt,,Jefferson (Conception) with South Nodaway,,False,False
 2027-02-09,Normandy Collaborative,,Jennings,,False,False
 2027-02-09,Confluence Prep Academy Charter with Grand Center Arts Charter,,John Burroughs,,False,False
