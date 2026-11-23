@@ -49,8 +49,12 @@ jobs:
     timeout-minutes: 30
 
     steps:
+      # Full history: the Matchup Recap step reads earlier versions of the
+      # ratings file (the ratings as they stood before each game).
       - name: Checkout repo
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -131,6 +135,25 @@ jobs:
             echo "Previews script or ratings not present yet -- skipping."
           fi
 
+      # Matchup Recaps (matchup_recaps_girls_basketball_2026/<date>.json + manifest.json)
+      # for every final game: the pre-game projection from the ratings as committed
+      # before tip-off, ranks from the first ratings run after the game. Written once
+      # and frozen; runs after the ratings step so last night's games use tonight's
+      # ratings. Only date files that changed are rewritten.
+      - name: Build matchup recaps
+        continue-on-error: true
+        run: |
+          if [ -f build_matchup_recaps_girls_basketball_2026.py ] && [ -f girls_basketball_ratings_2026.json ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+            # Tonight's ratings must be in git history before the recaps read it.
+            git add girls_basketball_ratings_2026.json
+            git diff --cached --quiet || git commit -q -m "Update Girls Basketball 2026 ratings ($(date -u +'%Y-%m-%d'))"
+            python build_matchup_recaps_girls_basketball_2026.py
+          else
+            echo "Recaps script or ratings not present yet -- skipping."
+          fi
+
       - name: Commit and push outputs
         run: |
           git config user.name  "github-actions[bot]"
@@ -149,13 +172,20 @@ jobs:
           git add per_capita_girls_basketball_2026.json per_capita_girls_basketball_2026.csv 2>/dev/null || true
           # Matchup previews (skipped quietly if that step failed)
           git add matchup_previews_girls_basketball_2026.json 2>/dev/null || true
+          # Matchup recaps (skipped quietly if that step failed)
+          git add matchup_recaps_girls_basketball_2026 2>/dev/null || true
           # Graphics (+ fonts, in case they were downloaded this run)
           git add graphics/*.png 2>/dev/null || true
           git add fonts/*.ttf 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No changes to commit."
+            # The recap step may already have committed tonight's ratings.
+            if [ -n "$(git log origin/${GITHUB_REF_NAME}..HEAD --oneline)" ]; then
+              git pull --rebase origin "${GITHUB_REF_NAME}"
+              git push origin "HEAD:${GITHUB_REF_NAME}"
+            fi
             exit 0
           fi
-          git commit -m "Update Girls Basketball 2026 games, schedule, ratings, per capita, graphics, matchup previews ($(date -u +'%Y-%m-%d'))"
+          git commit -m "Update Girls Basketball 2026 games, schedule, ratings, per capita, graphics, matchup previews, recaps ($(date -u +'%Y-%m-%d'))"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
