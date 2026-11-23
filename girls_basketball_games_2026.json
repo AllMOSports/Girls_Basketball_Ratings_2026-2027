@@ -1,6 +1,15 @@
 [
   {
     "date": "2026-11-19",
+    "team1": "Mountain Grove",
+    "score1": 57,
+    "team2": "Alton",
+    "score2": 49,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-19",
     "team1": "Chadwick",
     "score1": 74,
     "team2": "Aurora",
@@ -158,15 +167,6 @@
     "score1": 45,
     "team2": "Vienna",
     "score2": 62,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-19",
-    "team1": "Mountain Grove",
-    "score1": null,
-    "team2": "Alton",
-    "score2": null,
     "forfeit": false,
     "overtime": false
   },
@@ -451,6 +451,15 @@
   },
   {
     "date": "2026-11-20",
+    "team1": "Rolla",
+    "score1": 59,
+    "team2": "Seckman",
+    "score2": 15,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-20",
     "team1": "Midway",
     "score1": 40,
     "team2": "Sherwood",
@@ -500,6 +509,15 @@
     "score1": 42,
     "team2": "Stover",
     "score2": 67,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-20",
+    "team1": "St. Pius X (Festus)",
+    "score1": 65,
+    "team2": "Ursuline Academy",
+    "score2": 70,
     "forfeit": false,
     "overtime": false
   },
@@ -613,15 +631,6 @@
   },
   {
     "date": "2026-11-20",
-    "team1": "Rolla",
-    "score1": null,
-    "team2": "Seckman",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-20",
     "team1": "Ash Grove",
     "score1": null,
     "team2": "Spokane",
@@ -639,11 +648,20 @@
     "overtime": false
   },
   {
-    "date": "2026-11-20",
-    "team1": "St. Pius X (Festus)",
-    "score1": null,
-    "team2": "Ursuline Academy",
-    "score2": null,
+    "date": "2026-11-21",
+    "team1": "Springfield Catholic",
+    "score1": 50,
+    "team2": "Aurora",
+    "score2": 16,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-21",
+    "team1": "Verona",
+    "score1": 10,
+    "team2": "Blue Eye",
+    "score2": 82,
     "forfeit": false,
     "overtime": false
   },
@@ -662,6 +680,15 @@
     "score1": 32,
     "team2": "DeSoto",
     "score2": 41,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-21",
+    "team1": "Principia",
+    "score1": 67,
+    "team2": "Farmington",
+    "score2": 64,
     "forfeit": false,
     "overtime": false
   },
@@ -721,6 +748,15 @@
   },
   {
     "date": "2026-11-21",
+    "team1": "Russellville",
+    "score1": 39,
+    "team2": "Steelville",
+    "score2": 76,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-21",
     "team1": "Willard",
     "score1": 61,
     "team2": "Union",
@@ -757,24 +793,6 @@
   },
   {
     "date": "2026-11-21",
-    "team1": "Springfield Catholic",
-    "score1": null,
-    "team2": "Aurora",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-21",
-    "team1": "Verona",
-    "score1": null,
-    "team2": "Blue Eye",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-21",
     "team1": "Valley with Bismarck",
     "score1": null,
     "team2": "Central (Park Hills)",
@@ -785,15 +803,6 @@
   {
     "date": "2026-11-21",
     "team1": "Lafayette (Wildwood)",
-    "score1": null,
-    "team2": "Farmington",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-21",
-    "team1": "Principia",
     "score1": null,
     "team2": "Farmington",
     "score2": null,
@@ -892,15 +901,6 @@
   },
   {
     "date": "2026-11-21",
-    "team1": "Russellville",
-    "score1": null,
-    "team2": "Steelville",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-21",
     "team1": "Whitfield",
     "score1": null,
     "team2": "Strafford",
@@ -929,9 +929,9 @@
   {
     "date": "2026-11-22",
     "team1": "West Plains",
-    "score1": null,
+    "score1": 42,
     "team2": "Jackson",
-    "score2": null,
+    "score2": 74,
     "forfeit": false,
     "overtime": false
   },
@@ -1525,6 +1525,15 @@
     "team1": "Russellville",
     "score1": null,
     "team2": "Blair Oaks",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
+    "team1": "Wheaton",
+    "score1": null,
+    "team2": "Blue Eye",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -2350,6 +2359,15 @@
   },
   {
     "date": "2026-11-25",
+    "team1": "Metro",
+    "score1": null,
+    "team2": "Visitation Academy",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-26",
     "team1": "Metro",
     "score1": null,
     "team2": "Visitation Academy",
@@ -12064,6 +12082,15 @@
     "team1": "Lafayette County",
     "score1": null,
     "team2": "Kirksville",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-12-29",
+    "team1": "Northland Christian",
+    "score1": null,
+    "team2": "Liberal",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -33106,6 +33133,15 @@
     "team1": "Battle",
     "score1": null,
     "team2": "Helias Catholic",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2027-02-12",
+    "team1": "Crystal City",
+    "score1": null,
+    "team2": "Herculaneum",
     "score2": null,
     "forfeit": false,
     "overtime": false

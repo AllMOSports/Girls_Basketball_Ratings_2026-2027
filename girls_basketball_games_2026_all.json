@@ -1,6 +1,17 @@
 [
   {
     "date": "2026-11-19",
+    "team1": "Mountain Grove",
+    "team1_classified": true,
+    "score1": 57,
+    "team2": "Alton",
+    "team2_classified": true,
+    "score2": 49,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-19",
     "team1": "Chadwick",
     "team1_classified": true,
     "score1": 74,
@@ -232,17 +243,6 @@
   },
   {
     "date": "2026-11-19",
-    "team1": "Mountain Grove",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "Alton",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-19",
     "team1": "Piggott(Piggott, AR)",
     "team1_classified": false,
     "score1": null,
@@ -430,6 +430,17 @@
   },
   {
     "date": "2026-11-20",
+    "team1": "Principia",
+    "team1_classified": true,
+    "score1": 57,
+    "team2": "Har-Ber(Springdale, AR)",
+    "team2_classified": false,
+    "score2": 84,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-20",
     "team1": "Sturgeon",
     "team1_classified": true,
     "score1": 13,
@@ -595,6 +606,17 @@
   },
   {
     "date": "2026-11-20",
+    "team1": "Rolla",
+    "team1_classified": true,
+    "score1": 59,
+    "team2": "Seckman",
+    "team2_classified": true,
+    "score2": 15,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-20",
     "team1": "Midway",
     "team1_classified": true,
     "score1": 40,
@@ -661,6 +683,17 @@
   },
   {
     "date": "2026-11-20",
+    "team1": "St. Pius X (Festus)",
+    "team1_classified": true,
+    "score1": 65,
+    "team2": "Ursuline Academy",
+    "team2_classified": true,
+    "score2": 70,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-20",
     "team1": "Jamestown",
     "team1_classified": true,
     "score1": 30,
@@ -721,17 +754,6 @@
     "score1": null,
     "team2": "Hannibal",
     "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-20",
-    "team1": "Principia",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "Har-Ber(Springdale, AR)",
-    "team2_classified": false,
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -826,17 +848,6 @@
   },
   {
     "date": "2026-11-20",
-    "team1": "Rolla",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "Seckman",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-20",
     "team1": "Ash Grove",
     "team1_classified": true,
     "score1": null,
@@ -891,13 +902,24 @@
     "overtime": false
   },
   {
-    "date": "2026-11-20",
-    "team1": "St. Pius X (Festus)",
+    "date": "2026-11-21",
+    "team1": "Springfield Catholic",
     "team1_classified": true,
-    "score1": null,
-    "team2": "Ursuline Academy",
+    "score1": 50,
+    "team2": "Aurora",
     "team2_classified": true,
-    "score2": null,
+    "score2": 16,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-21",
+    "team1": "Verona",
+    "team1_classified": true,
+    "score1": 10,
+    "team2": "Blue Eye",
+    "team2_classified": true,
+    "score2": 82,
     "forfeit": false,
     "overtime": false
   },
@@ -920,6 +942,17 @@
     "team2": "DeSoto",
     "team2_classified": true,
     "score2": 41,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-21",
+    "team1": "Principia",
+    "team1_classified": true,
+    "score1": 67,
+    "team2": "Farmington",
+    "team2_classified": true,
+    "score2": 64,
     "forfeit": false,
     "overtime": false
   },
@@ -991,6 +1024,17 @@
   },
   {
     "date": "2026-11-21",
+    "team1": "Russellville",
+    "team1_classified": true,
+    "score1": 39,
+    "team2": "Steelville",
+    "team2_classified": true,
+    "score2": 76,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-21",
     "team1": "Willard",
     "team1_classified": true,
     "score1": 61,
@@ -1035,28 +1079,6 @@
   },
   {
     "date": "2026-11-21",
-    "team1": "Springfield Catholic",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "Aurora",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-21",
-    "team1": "Verona",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "Blue Eye",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-21",
     "team1": "Valley with Bismarck",
     "team1_classified": true,
     "score1": null,
@@ -1069,17 +1091,6 @@
   {
     "date": "2026-11-21",
     "team1": "Lafayette (Wildwood)",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "Farmington",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-21",
-    "team1": "Principia",
     "team1_classified": true,
     "score1": null,
     "team2": "Farmington",
@@ -1233,17 +1244,6 @@
   },
   {
     "date": "2026-11-21",
-    "team1": "Russellville",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "Steelville",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-21",
     "team1": "Whitfield",
     "team1_classified": true,
     "score1": null,
@@ -1277,22 +1277,22 @@
   },
   {
     "date": "2026-11-22",
-    "team1": "Hazelwood Central",
+    "team1": "West Plains",
     "team1_classified": true,
-    "score1": null,
-    "team2": "East St. Louis(East St. Louis, IL)",
-    "team2_classified": false,
-    "score2": null,
+    "score1": 42,
+    "team2": "Jackson",
+    "team2_classified": true,
+    "score2": 74,
     "forfeit": false,
     "overtime": false
   },
   {
     "date": "2026-11-22",
-    "team1": "West Plains",
+    "team1": "Hazelwood Central",
     "team1_classified": true,
     "score1": null,
-    "team2": "Jackson",
-    "team2_classified": true,
+    "team2": "East St. Louis(East St. Louis, IL)",
+    "team2_classified": false,
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -2073,6 +2073,17 @@
     "team1_classified": true,
     "score1": null,
     "team2": "Blair Oaks",
+    "team2_classified": true,
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
+    "team1": "Wheaton",
+    "team1_classified": true,
+    "score1": null,
+    "team2": "Blue Eye",
     "team2_classified": true,
     "score2": null,
     "forfeit": false,
@@ -3146,6 +3157,28 @@
     "overtime": false
   },
   {
+    "date": "2026-11-26",
+    "team1": "Metro",
+    "team1_classified": true,
+    "score1": null,
+    "team2": "Visitation Academy",
+    "team2_classified": true,
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-26",
+    "team1": "Hazelwood West",
+    "team1_classified": true,
+    "score1": null,
+    "team2": "Washington Community(Washington, IL)",
+    "team2_classified": false,
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
     "date": "2026-11-27",
     "team1": "Van Buren",
     "team1_classified": true,
@@ -3206,6 +3239,17 @@
     "team1_classified": true,
     "score1": null,
     "team2": "Jefferson City",
+    "team2_classified": true,
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-30",
+    "team1": "Lighthouse Sr. High",
+    "team1_classified": false,
+    "score1": null,
+    "team2": "Ash Grove",
     "team2_classified": true,
     "score2": null,
     "forfeit": false,
@@ -17275,6 +17319,17 @@
     "team1_classified": true,
     "score1": null,
     "team2": "Kirksville",
+    "team2_classified": true,
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-12-29",
+    "team1": "Northland Christian",
+    "team1_classified": true,
+    "score1": null,
+    "team2": "Liberal",
     "team2_classified": true,
     "score2": null,
     "forfeit": false,
@@ -45523,6 +45578,17 @@
     "team1_classified": true,
     "score1": null,
     "team2": "Helias Catholic",
+    "team2_classified": true,
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2027-02-12",
+    "team1": "Crystal City",
+    "team1_classified": true,
+    "score1": null,
+    "team2": "Herculaneum",
     "team2_classified": true,
     "score2": null,
     "forfeit": false,

@@ -1,4 +1,5 @@
 date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtime
+2026-11-19,Mountain Grove,True,57,Alton,True,49,False,False
 2026-11-19,Chadwick,True,74,Aurora,True,41,False,False
 2026-11-19,Charleston,True,40,Bloomfield with Richland (Essex),True,43,False,False
 2026-11-19,Palmyra,True,57,Bowling Green,True,17,False,False
@@ -20,7 +21,6 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-11-19,Diamond,True,40,Seneca,True,39,False,False
 2026-11-19,Summit Christian Academy,True,24,Smith-Cotton,True,46,False,False
 2026-11-19,Russellville,True,45,Vienna,True,62,False,False
-2026-11-19,Mountain Grove,True,,Alton,True,,False,False
 2026-11-19,"Piggott(Piggott, AR)",False,,Holcomb,True,,False,False
 2026-11-20,Brunswick,True,38,Atlanta,True,70,False,False
 2026-11-20,Iberia,True,56,Blair Oaks,True,38,False,False
@@ -38,6 +38,7 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-11-20,Lincoln College Prep,True,57,Grandview,True,24,False,False
 2026-11-20,Crest Ridge,True,68,Green Ridge,True,20,False,False
 2026-11-20,Northland Christian,True,68,Guadalupe Centers Charter,True,27,False,False
+2026-11-20,Principia,True,57,"Har-Ber(Springdale, AR)",False,84,False,False
 2026-11-20,Sturgeon,True,13,Harrisburg,True,91,False,False
 2026-11-20,Rich Hill,True,21,Hermitage,True,61,False,False
 2026-11-20,Ft. Zumwalt East,True,18,Holt,True,57,False,False
@@ -53,19 +54,20 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-11-20,Cabool,True,25,Plato,True,64,False,False
 2026-11-20,Clearwater,True,40,Puxico,True,70,False,False
 2026-11-20,New Covenant Academy,True,72,Sarcoxie,True,36,False,False
+2026-11-20,Rolla,True,59,Seckman,True,15,False,False
 2026-11-20,Midway,True,40,Sherwood,True,48,False,False
 2026-11-20,Prairie Home,True,47,Slater with Malta Bend,True,38,False,False
 2026-11-20,Father Tolton,True,64,Southern Boone,True,39,False,False
 2026-11-20,Linn,True,59,St. Elizabeth,True,43,False,False
 2026-11-20,Van Horn,True,37,St. Pius X (Kansas City),True,54,False,False
 2026-11-20,Macks Creek,True,42,Stover,True,67,False,False
+2026-11-20,St. Pius X (Festus),True,65,Ursuline Academy,True,70,False,False
 2026-11-20,Jamestown,True,30,Versailles,True,41,False,False
 2026-11-20,Hermann,True,37,Washington,True,41,False,False
 2026-11-20,Hume,True,27,Wheatland,True,40,False,False
 2026-11-20,Valley Park,True,,Crystal City,True,,False,False
 2026-11-20,Greenwood,True,,Dora,True,,False,False
 2026-11-20,Monroe City,True,,Hannibal,True,,False,False
-2026-11-20,Principia,True,,"Har-Ber(Springdale, AR)",False,,False,False
 2026-11-20,John Burroughs,True,,Ladue Horton Watkins,True,,False,False
 2026-11-20,Montrose with Ballard,True,,Lakeland,True,,False,False
 2026-11-20,Wellsville-Middletown,True,,New Bloomfield,True,,False,False
@@ -74,30 +76,29 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-11-20,Kennett,True,,"Paragould(Paragould, AR)",False,,False,False
 2026-11-20,Believe Acad Charter,True,,Providence Academy Sr.,False,,False,False
 2026-11-20,Humansville,True,,School of the Ozarks,True,,False,False
-2026-11-20,Rolla,True,,Seckman,True,,False,False
 2026-11-20,Ash Grove,True,,Spokane,True,,False,False
 2026-11-20,Capital City,True,,St. James,True,,False,False
 2026-11-20,Lift for Life Academy Charter,True,,"Union(Tulsa, OK)",False,,False,False
 2026-11-20,Crossroads Prep Charter,False,,University Academy Charter,True,,False,False
 2026-11-20,"Belleville East(Belleville, IL)",False,,University City,True,,False,False
-2026-11-20,St. Pius X (Festus),True,,Ursuline Academy,True,,False,False
+2026-11-21,Springfield Catholic,True,50,Aurora,True,16,False,False
+2026-11-21,Verona,True,10,Blue Eye,True,82,False,False
 2026-11-21,New Franklin,True,41,Carrollton,True,31,False,False
 2026-11-21,St. Paul Lutheran (Farmington),True,32,DeSoto,True,41,False,False
+2026-11-21,Principia,True,67,Farmington,True,64,False,False
 2026-11-21,Laquey,True,21,Higbee,True,55,False,False
 2026-11-21,Marionville,True,49,Highland,True,34,False,False
 2026-11-21,Montgomery County,True,55,Kirksville,True,59,False,False
 2026-11-21,Cardinal Ritter,True,26,Lincoln College Prep,True,56,False,False
 2026-11-21,Gateway Science Charter,True,46,Lutheran North,True,47,False,False
 2026-11-21,Palmyra,True,60,Moberly,True,20,False,False
+2026-11-21,Russellville,True,39,Steelville,True,76,False,False
 2026-11-21,Willard,True,61,Union,True,20,False,False
 2026-11-21,Calvary Lutheran,True,32,Van-Far,True,57,False,False
 2026-11-21,Saxony Lutheran,True,,Arcadia Valley,True,,False,False
 2026-11-21,Perryville,True,,Arcadia Valley,True,,False,False
-2026-11-21,Springfield Catholic,True,,Aurora,True,,False,False
-2026-11-21,Verona,True,,Blue Eye,True,,False,False
 2026-11-21,Valley with Bismarck,True,,Central (Park Hills),True,,False,False
 2026-11-21,Lafayette (Wildwood),True,,Farmington,True,,False,False
-2026-11-21,Principia,True,,Farmington,True,,False,False
 2026-11-21,Kickapoo,True,,"Har-Ber(Springdale, AR)",False,,False,False
 2026-11-21,Cor Jesu Academy,True,,Hazelwood Central,True,,False,False
 2026-11-21,Lutheran St. Charles,True,,Hazelwood West,True,,False,False
@@ -111,12 +112,11 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-11-21,John Burroughs,True,,Potosi,True,,False,False
 2026-11-21,Cuba,True,,Richland,True,,False,False
 2026-11-21,Believe Acad Charter,True,,STEAM Academy,True,,False,False
-2026-11-21,Russellville,True,,Steelville,True,,False,False
 2026-11-21,Whitfield,True,,Strafford,True,,False,False
 2026-11-21,Helias Catholic,True,,Troy Buchanan,True,,False,False
 2026-11-21,St. Vincent,True,,West County,True,,False,False
+2026-11-22,West Plains,True,42,Jackson,True,74,False,False
 2026-11-22,Hazelwood Central,True,,"East St. Louis(East St. Louis, IL)",False,,False,False
-2026-11-22,West Plains,True,,Jackson,True,,False,False
 2026-11-22,Whitfield,True,,Kickapoo,True,,False,False
 2026-11-22,University City,True,,Lincoln College Prep,True,,False,False
 2026-11-22,University City,True,,"Lincoln Prep(Kansas City, MO)",False,,False,False
@@ -188,6 +188,7 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-11-24,St. Pius X (Festus),True,,Arcadia Valley,True,,False,False
 2026-11-24,Alton,True,,Bakersfield,True,,False,False
 2026-11-24,Russellville,True,,Blair Oaks,True,,False,False
+2026-11-24,Wheaton,True,,Blue Eye,True,,False,False
 2026-11-24,Cassville,True,,Branson,True,,False,False
 2026-11-24,Macon,True,,Brookfield,True,,False,False
 2026-11-24,Lighthouse Sr. High,False,,Buffalo,True,,False,False
@@ -285,12 +286,15 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-11-24,Mercer,True,,Worth County,True,,False,False
 2026-11-25,Metro,True,,Visitation Academy,True,,False,False
 2026-11-25,Hazelwood West,True,,"Washington Community(Washington, IL)",False,,False,False
+2026-11-26,Metro,True,,Visitation Academy,True,,False,False
+2026-11-26,Hazelwood West,True,,"Washington Community(Washington, IL)",False,,False,False
 2026-11-27,Van Buren,True,,Greenville,True,,False,False
 2026-11-27,St. Joseph's Academy,True,,Rock Bridge,True,,False,False
 2026-11-28,St. Joseph's Academy,True,,Battle,True,,False,False
 2026-11-28,Central (New Madrid County),True,,Bloomfield with Richland (Essex),True,,False,False
 2026-11-28,Plato,True,,Newburg,True,,False,False
 2026-11-29,Cardinal Ritter,True,,Jefferson City,True,,False,False
+2026-11-30,Lighthouse Sr. High,False,,Ash Grove,True,,False,False
 2026-11-30,Marion C. Early,True,,Aurora,True,,False,False
 2026-11-30,Bakersfield,True,,Ava,True,,False,False
 2026-11-30,Sparta,True,,"Berryville(Berryville, AR)",False,,False,False
@@ -1570,6 +1574,7 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-12-29,Montgomery County,True,,Highland,True,,False,False
 2026-12-29,Chilhowee,True,,Hogan Prep Academy Charter,True,,False,False
 2026-12-29,Lafayette County,True,,Kirksville,True,,False,False
+2026-12-29,Northland Christian,True,,Liberal,True,,False,False
 2026-12-29,Scotland County,True,,Marceline,True,,False,False
 2026-12-29,Rock Port,True,,Princeton,True,,False,False
 2026-12-29,Maryville,True,,"Skutt Catholic(Omaha, NE)",False,,False,False
@@ -4138,6 +4143,7 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2027-02-12,Fayette,True,,Harrisburg,True,,False,False
 2027-02-12,Jennings,True,,Hazelwood West,True,,False,False
 2027-02-12,Battle,True,,Helias Catholic,True,,False,False
+2027-02-12,Crystal City,True,,Herculaneum,True,,False,False
 2027-02-12,Macon,True,,Highland,True,,False,False
 2027-02-12,St. Charles West,True,,Holt,True,,False,False
 2027-02-12,Halfway,True,,Humansville,True,,False,False
