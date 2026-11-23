@@ -25,8 +25,10 @@ Same file shape as the football builder (build_matchup_previews_2026.py).
  
 PROJECTION - same approach as the football Matchup Predictor, each sport's scale:
   raw score     = own off_rating - opponent def_rating + league_average
-                  (league_average from the sport's ratings file - the same
-                  formula its schedule data already uses for predicted scores)
+                  (league_average from the sport's ratings file, except a sport
+                  with a Hypothetical Matchup Predictor uses that predictor's
+                  fixed value - basketball 54.5 boys / 44.5 girls - so every
+                  page shows the predictor's score; see league_average_for())
   win prob      = 1 / (1 + e^(-1.702 * raw margin / margin_prob_scale))
   shown score   = score_mode "round": negative raw rolled over onto the
                   opponent, both capped at max_score, rounded to whole
@@ -101,6 +103,8 @@ SPORTS = {
         "max_score": 120,          # no mercy rule; just a sanity cap on the shown score
         "unrated_margin_cap": 30,  # MSHSAA running clock starts at a 30-point margin
         "postseason_mmdd": ("02-20", "03-31"),   # district + state series window
+        "predictor_league_average": 54.5,
+        "preview_window_days": 21,               # games 5 months out make a huge file; previews cover the next 3 weeks        # = the Boys Basketball Hypothetical Matchup Predictor
     },
     "girls_basketball": {
         "label": "Girls Basketball", "unit": "point", "units": "points",
@@ -108,6 +112,8 @@ SPORTS = {
         "max_score": 110,          # no mercy rule; just a sanity cap on the shown score
         "unrated_margin_cap": 30,  # MSHSAA running clock starts at a 30-point margin
         "postseason_mmdd": ("02-20", "03-31"),   # district + state series window
+        "predictor_league_average": 44.5,
+        "preview_window_days": 21,        # = the Girls Basketball Hypothetical Matchup Predictor
     },
 }
 CFG = SPORTS[SPORT]
@@ -123,13 +129,16 @@ PER_CAPITA_PATH = f"per_capita_{SPORT}_2026.json"
 DATA_RAW = "https://raw.githubusercontent.com/AllMOSports/All_MO_Sports-Data/main/"
 LOGO_URL = DATA_RAW + "logos_main2/{slug}.png"
 HISTORY_FILE = f"{SPORT}_history.json"
-SCHEDULE_FILE = "output/" + SPORT + "_schedule_{year}.json"
+# Basketball season files carry the season span ("_schedule_2024-2025.json");
+# the fall sports use the single year.
+SCHEDULE_FILE = "output/" + SPORT + ("_schedule_{year}-{next}.json" if "basketball" in SPORT else "_schedule_{year}.json")
 DISTRICT_GAMES_FILE = f"data/{SPORT}_district_games_2012-2026.csv"
 HISTORY_YEARS = range(2012, 2026)
  
 MARGIN_PROB_SCALE = CFG["margin_prob_scale"]
 MAX_SCORE = CFG["max_score"]
 FORM_GAMES = 5
+H2H_GAMES_KEPT = 10         # most recent meetings listed per game (the page shows 6); counts use every meeting
 SHRINK_GAMES = 0.5          # pseudo-games shrinking unrated teams' estimated strength toward 0 (light:
                             # most unrated Missouri schools sit near the bottom, so heavy shrink overrates them)
 UNRATED_MARGIN_CAP = CFG["unrated_margin_cap"]
@@ -221,6 +230,16 @@ def week_of(date_str, season_start_monday):
 # Projection
 # --------------------------------------------------------------------------
  
+def league_average_for(ratings_doc):
+    """League average used in every projection. A sport with a Hypothetical
+    Matchup Predictor uses that predictor's fixed value (predictor_league_average)
+    so a Matchup Preview, the Sport Detail page, a Matchup Recap and the predictor
+    all show the same score for the same ratings - the same rule football uses.
+    Other sports use the ratings file's league_average. Change both places
+    together if the predictor's value ever changes."""
+    return CFG.get("predictor_league_average", ratings_doc["league_average"])
+
+
 def win_prob_from_margin(margin, scale=MARGIN_PROB_SCALE):
     return 1.0 / (1.0 + math.exp(-1.702 * margin / scale))
  
@@ -325,9 +344,9 @@ def load_h2h_history(names, postseason_pairs):
     meetings = defaultdict(list)
     for y in HISTORY_YEARS:
         try:
-            doc = load_data_file(SCHEDULE_FILE.format(year=y))
+            doc = load_data_file(SCHEDULE_FILE.format(year=y, next=y + 1))
         except Exception as e:
-            print(f"  WARNING: {SCHEDULE_FILE.format(year=y)} unavailable ({e})")
+            print(f"  WARNING: {SCHEDULE_FILE.format(year=y, next=y + 1)} unavailable ({e})")
             continue
         seen = set()
         for me, games in doc.get("teams", doc).items():
@@ -388,7 +407,7 @@ def h2h_block(a, b, history, results_2026):
     return {"since": rows[0]["season"], "meetings": len(rows), "wins": [a_w, b_w], "ties": ties,
             "avg_margin_a": round(sum(x["a"] - x["b"] for x in rows) / len(rows), 1),
             "streak": {"team": streak_team, "games": streak} if streak_team else None,
-            "closest": closest, "games": list(reversed(rows))}
+            "closest": closest, "games": list(reversed(rows))[:H2H_GAMES_KEPT]}
  
  
 def program_block(slug, history_doc, current_rank):
@@ -454,7 +473,7 @@ def build_tags(A, B, proj, h2h):
  
 def main():
     ratings_doc = load_json(RATINGS_PATH)
-    L = ratings_doc["league_average"]
+    L = league_average_for(ratings_doc)
     ratings = {t["school"]: t for t in ratings_doc["teams"]}
     ovr = {n: t["ovr_rating"] for n, t in ratings.items()}
     games = load_json(GAMES_PATH)
@@ -493,6 +512,9 @@ def main():
     placeholder = {"tbd", "tba", "bye"}      # unset tournament slots
     upcoming = [g for g in games if (g["score1"] is None or g["score2"] is None) and g["date"] >= today
                 and g["team1"].strip().lower() not in placeholder and g["team2"].strip().lower() not in placeholder]
+    if CFG.get("preview_window_days"):
+        last_day = (datetime.datetime.now(CENTRAL).date() + datetime.timedelta(days=CFG["preview_window_days"])).isoformat()
+        upcoming = [g for g in upcoming if g["date"] <= last_day]
     print(f"Upcoming games: {len(upcoming)} (from {today}; "
           f"{sum(1 for g in games if g['score1'] is None and g['date'] < today)} past-dated games without scores skipped)")
  
