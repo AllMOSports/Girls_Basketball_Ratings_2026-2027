@@ -1,95 +1,20 @@
 {
-  "last_updated": "November 20, 2026 at 03:46 PM",
-  "league_average": 42.85,
+  "last_updated": "November 24, 2026 at 09:10 AM",
+  "league_average": 44.65,
   "classification": 3,
   "teams": [
     {
       "ovr_rank": 1,
-      "school": "Palmyra",
-      "classification": 3,
-      "district": 6,
-      "ovr_rating": 20.0,
-      "off_rating": 7.08,
-      "off_rank": 3,
-      "def_rating": 12.92,
-      "def_rank": 2
-    },
-    {
-      "ovr_rank": 2,
-      "school": "Brookfield",
-      "classification": 3,
-      "district": 16,
-      "ovr_rating": 19.5,
-      "off_rating": 5.58,
-      "off_rank": 4,
-      "def_rating": 13.92,
-      "def_rank": 1
-    },
-    {
-      "ovr_rank": 3,
       "school": "New Covenant Academy",
       "classification": 3,
       "district": 11,
-      "ovr_rating": 12.5,
-      "off_rating": 11.08,
+      "ovr_rating": -0.72,
+      "off_rating": 2.14,
       "off_rank": 1,
-      "def_rating": 1.42,
-      "def_rank": 5
-    },
-    {
-      "ovr_rank": 4,
-      "school": "Clearwater",
-      "classification": 3,
-      "district": 3,
-      "ovr_rating": 5.0,
-      "off_rating": 10.08,
-      "off_rank": 2,
-      "def_rating": -5.08,
-      "def_rank": 6
-    },
-    {
-      "ovr_rank": 5,
-      "school": "Believe Acad Charter",
-      "classification": 3,
-      "district": 4,
-      "ovr_rating": -1.5,
-      "off_rating": -5.42,
-      "off_rank": 5,
-      "def_rating": 3.92,
-      "def_rank": 4
-    },
-    {
-      "ovr_rank": 6,
-      "school": "Conway",
-      "classification": 3,
-      "district": 10,
-      "ovr_rating": -3.5,
-      "off_rating": -8.42,
-      "off_rank": 7,
-      "def_rating": 4.92,
-      "def_rank": 3
-    },
-    {
-      "ovr_rank": 7,
-      "school": "Caruthersville",
-      "classification": 3,
-      "district": 1,
-      "ovr_rating": -18.0,
-      "off_rating": -6.92,
-      "off_rank": 6,
-      "def_rating": -11.08,
-      "def_rank": 8
-    },
-    {
-      "ovr_rank": 8,
-      "school": "Bowling Green",
-      "classification": 3,
-      "district": 6,
-      "ovr_rating": -20.0,
-      "off_rating": -12.92,
-      "off_rank": 8,
-      "def_rating": -7.08,
-      "def_rank": 7
+      "def_rating": -2.86,
+      "def_rank": 1,
+      "games": 3,
+      "current_weight": 0.375
     }
   ]
 }

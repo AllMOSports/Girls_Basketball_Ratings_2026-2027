@@ -1,51 +1,20 @@
 {
-  "last_updated": "November 20, 2026 at 03:46 PM",
-  "league_average": 42.85,
+  "last_updated": "November 24, 2026 at 09:10 AM",
+  "league_average": 44.65,
   "classification": 5,
   "teams": [
     {
       "ovr_rank": 1,
-      "school": "Jefferson City",
-      "classification": 5,
-      "district": 5,
-      "ovr_rating": 16.5,
-      "off_rating": 15.58,
-      "off_rank": 1,
-      "def_rating": 0.92,
-      "def_rank": 3
-    },
-    {
-      "ovr_rank": 2,
-      "school": "East (Kansas City)",
+      "school": "Lincoln College Prep",
       "classification": 5,
       "district": 8,
-      "ovr_rating": 3.0,
-      "off_rating": -9.42,
-      "off_rank": 4,
-      "def_rating": 12.42,
-      "def_rank": 1
-    },
-    {
-      "ovr_rank": 3,
-      "school": "Gateway with Soldan International Studies",
-      "classification": 5,
-      "district": 1,
-      "ovr_rating": 1.5,
-      "off_rating": -3.92,
-      "off_rank": 3,
-      "def_rating": 5.42,
-      "def_rank": 2
-    },
-    {
-      "ovr_rank": 4,
-      "school": "Camdenton",
-      "classification": 5,
-      "district": 5,
-      "ovr_rating": -16.5,
-      "off_rating": -0.92,
-      "off_rank": 2,
-      "def_rating": -15.58,
-      "def_rank": 4
+      "ovr_rating": 15.75,
+      "off_rating": 7.52,
+      "off_rank": 1,
+      "def_rating": 8.23,
+      "def_rank": 1,
+      "games": 3,
+      "current_weight": 0.375
     }
   ]
 }

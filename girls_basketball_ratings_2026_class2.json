@@ -1,40 +1,20 @@
 {
-  "last_updated": "November 20, 2026 at 03:46 PM",
-  "league_average": 42.85,
+  "last_updated": "November 24, 2026 at 09:10 AM",
+  "league_average": 44.65,
   "classification": 2,
   "teams": [
     {
       "ovr_rank": 1,
-      "school": "Vienna",
-      "classification": 2,
-      "district": 9,
-      "ovr_rating": 8.5,
-      "off_rating": 9.58,
-      "off_rank": 1,
-      "def_rating": -1.08,
-      "def_rank": 1
-    },
-    {
-      "ovr_rank": 2,
-      "school": "Greenville",
-      "classification": 2,
-      "district": 3,
-      "ovr_rating": -5.0,
-      "off_rating": 5.08,
-      "off_rank": 2,
-      "def_rating": -10.08,
-      "def_rank": 3
-    },
-    {
-      "ovr_rank": 3,
-      "school": "Russellville",
+      "school": "Calvary Lutheran",
       "classification": 2,
       "district": 8,
-      "ovr_rating": -8.5,
-      "off_rating": 1.08,
-      "off_rank": 3,
-      "def_rating": -9.58,
-      "def_rank": 2
+      "ovr_rating": 2.03,
+      "off_rating": 1.02,
+      "off_rank": 1,
+      "def_rating": 1.01,
+      "def_rank": 1,
+      "games": 3,
+      "current_weight": 0.375
     }
   ]
 }
