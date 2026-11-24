@@ -1,5 +1,45 @@
 {
-  "last_updated": "November 23, 2026 at 09:10 AM",
-  "league_average": 44.71,
-  "teams": []
+  "last_updated": "November 24, 2026 at 09:10 AM",
+  "league_average": 44.65,
+  "teams": [
+    {
+      "ovr_rank": 1,
+      "school": "Lincoln College Prep",
+      "classification": 5,
+      "district": 8,
+      "ovr_rating": 15.75,
+      "off_rating": 7.52,
+      "off_rank": 1,
+      "def_rating": 8.23,
+      "def_rank": 1,
+      "games": 3,
+      "current_weight": 0.375
+    },
+    {
+      "ovr_rank": 2,
+      "school": "Calvary Lutheran",
+      "classification": 2,
+      "district": 8,
+      "ovr_rating": 2.03,
+      "off_rating": 1.02,
+      "off_rank": 3,
+      "def_rating": 1.01,
+      "def_rank": 2,
+      "games": 3,
+      "current_weight": 0.375
+    },
+    {
+      "ovr_rank": 3,
+      "school": "New Covenant Academy",
+      "classification": 3,
+      "district": 11,
+      "ovr_rating": -0.72,
+      "off_rating": 2.14,
+      "off_rank": 2,
+      "def_rating": -2.86,
+      "def_rank": 3,
+      "games": 3,
+      "current_weight": 0.375
+    }
+  ]
 }
