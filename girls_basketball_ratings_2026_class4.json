@@ -1,6 +1,6 @@
 {
-  "last_updated": "November 25, 2026 at 09:10 AM",
-  "league_average": 44.69,
+  "last_updated": "November 26, 2026 at 09:10 AM",
+  "league_average": 44.64,
   "classification": 4,
   "teams": [
     {
@@ -8,10 +8,10 @@
       "school": "Lutheran South",
       "classification": 4,
       "district": 4,
-      "ovr_rating": 12.38,
-      "off_rating": 7.62,
+      "ovr_rating": 12.44,
+      "off_rating": 7.71,
       "off_rank": 1,
-      "def_rating": 4.76,
+      "def_rating": 4.73,
       "def_rank": 1,
       "games": 3,
       "current_weight": 0.375
@@ -22,9 +22,9 @@
       "classification": 4,
       "district": 2,
       "ovr_rating": -3.69,
-      "off_rating": -1.06,
+      "off_rating": -1.04,
       "off_rank": 2,
-      "def_rating": -2.63,
+      "def_rating": -2.65,
       "def_rank": 2,
       "games": 3,
       "current_weight": 0.375

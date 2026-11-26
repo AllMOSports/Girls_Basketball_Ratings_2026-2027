@@ -253,6 +253,15 @@
   },
   {
     "date": "2026-11-20",
+    "team1": "Greenwood",
+    "score1": 60,
+    "team2": "Dora",
+    "score2": 29,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-20",
     "team1": "Nerinx Hall",
     "score1": 26,
     "team2": "Duchesne",
@@ -514,6 +523,15 @@
   },
   {
     "date": "2026-11-20",
+    "team1": "Capital City",
+    "score1": 54,
+    "team2": "St. James",
+    "score2": 56,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-20",
     "team1": "Van Horn",
     "score1": 37,
     "team2": "St. Pius X (Kansas City)",
@@ -563,15 +581,6 @@
     "score1": 27,
     "team2": "Wheatland",
     "score2": 40,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-20",
-    "team1": "Greenwood",
-    "score1": null,
-    "team2": "Dora",
-    "score2": null,
     "forfeit": false,
     "overtime": false
   },
@@ -634,15 +643,6 @@
     "team1": "Ash Grove",
     "score1": null,
     "team2": "Spokane",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-20",
-    "team1": "Capital City",
-    "score1": null,
-    "team2": "St. James",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -1144,6 +1144,15 @@
   },
   {
     "date": "2026-11-23",
+    "team1": "Norwood",
+    "score1": 54,
+    "team2": "Fair Grove",
+    "score2": 56,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-23",
     "team1": "Hermann",
     "score1": 37,
     "team2": "Father Tolton",
@@ -1270,6 +1279,15 @@
   },
   {
     "date": "2026-11-23",
+    "team1": "Sarcoxie",
+    "score1": 35,
+    "team2": "Monett",
+    "score2": 54,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-23",
     "team1": "Central (Springfield)",
     "score1": 35,
     "team2": "Mt. Vernon",
@@ -1333,6 +1351,15 @@
   },
   {
     "date": "2026-11-23",
+    "team1": "Greenwood",
+    "score1": 68,
+    "team2": "Pleasant Hope",
+    "score2": 17,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-23",
     "team1": "Spokane",
     "score1": 53,
     "team2": "Reeds Spring",
@@ -1387,6 +1414,15 @@
   },
   {
     "date": "2026-11-23",
+    "team1": "Van Buren",
+    "score1": 48,
+    "team2": "Valley with Bismarck",
+    "score2": 53,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-23",
     "team1": "Tuscumbia",
     "score1": 23,
     "team2": "Versailles",
@@ -1432,15 +1468,6 @@
   },
   {
     "date": "2026-11-23",
-    "team1": "Norwood",
-    "score1": null,
-    "team2": "Fair Grove",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-23",
     "team1": "Sikeston",
     "score1": null,
     "team2": "Farmington",
@@ -1477,24 +1504,6 @@
   },
   {
     "date": "2026-11-23",
-    "team1": "Sarcoxie",
-    "score1": null,
-    "team2": "Monett",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-23",
-    "team1": "Greenwood",
-    "score1": null,
-    "team2": "Pleasant Hope",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-23",
     "team1": "Cainsville with Ridgeway",
     "score1": null,
     "team2": "Princeton",
@@ -1507,15 +1516,6 @@
     "team1": "Northeast Vernon County",
     "score1": null,
     "team2": "Rich Hill",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-23",
-    "team1": "Van Buren",
-    "score1": null,
-    "team2": "Valley with Bismarck",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -1576,6 +1576,24 @@
   },
   {
     "date": "2026-11-24",
+    "team1": "West Platte",
+    "score1": 54,
+    "team2": "Cameron",
+    "score2": 45,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
+    "team1": "Eldon",
+    "score1": 35,
+    "team2": "Capital City",
+    "score2": 55,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
     "team1": "Carthage",
     "score1": 45,
     "team2": "Carl Junction",
@@ -1612,10 +1630,46 @@
   },
   {
     "date": "2026-11-24",
+    "team1": "Wellsville-Middletown",
+    "score1": 17,
+    "team2": "Community",
+    "score2": 47,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
+    "team1": "Stockton",
+    "score1": 30,
+    "team2": "Crane",
+    "score2": 40,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
     "team1": "Newburg",
     "score1": 38,
     "team2": "Cuba",
-    "score2": null,
+    "score2": 63,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
+    "team1": "Everton",
+    "score1": 51,
+    "team2": "Diamond",
+    "score2": 60,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
+    "team1": "Steelville",
+    "score1": 44,
+    "team2": "Dixon",
+    "score2": 51,
     "forfeit": false,
     "overtime": false
   },
@@ -1670,6 +1724,15 @@
     "score1": 69,
     "team2": "Greenfield",
     "score2": 43,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
+    "team1": "St. Dominic",
+    "score1": 74,
+    "team2": "Helias Catholic",
+    "score2": 78,
     "forfeit": false,
     "overtime": false
   },
@@ -1774,6 +1837,15 @@
   },
   {
     "date": "2026-11-24",
+    "team1": "Sherwood",
+    "score1": 46,
+    "team2": "Lakeland",
+    "score2": 31,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
     "team1": "Holt",
     "score1": 57,
     "team2": "Liberty (Wentzville)",
@@ -1786,7 +1858,7 @@
     "team1": "Rockwood Summit",
     "score1": 46,
     "team2": "Lutheran South",
-    "score2": 52,
+    "score2": 53,
     "forfeit": false,
     "overtime": false
   },
@@ -1828,10 +1900,37 @@
   },
   {
     "date": "2026-11-24",
+    "team1": "Brashear",
+    "score1": 31,
+    "team2": "Milan",
+    "score2": 20,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
+    "team1": "Moberly",
+    "score1": 29,
+    "team2": "Monroe City",
+    "score2": 51,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
     "team1": "Boonville",
     "score1": 47,
     "team2": "Montgomery County",
     "score2": 53,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
+    "team1": "Greenwood",
+    "score1": 55,
+    "team2": "New Covenant Academy",
+    "score2": 16,
     "forfeit": false,
     "overtime": false
   },
@@ -1846,6 +1945,24 @@
   },
   {
     "date": "2026-11-24",
+    "team1": "Cabool",
+    "score1": 27,
+    "team2": "Niangua",
+    "score2": 44,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
+    "team1": "Albany",
+    "score1": 55,
+    "team2": "Northeast Nodaway",
+    "score2": 20,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
     "team1": "Meadville",
     "score1": 31,
     "team2": "Osborn with Stewartsville",
@@ -1855,10 +1972,28 @@
   },
   {
     "date": "2026-11-24",
+    "team1": "Weaubleau",
+    "score1": 39,
+    "team2": "Osceola",
+    "score2": 58,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
     "team1": "Washington",
     "score1": 46,
     "team2": "Pacific",
     "score2": 34,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
+    "team1": "Savannah",
+    "score1": 52,
+    "team2": "Platte County",
+    "score2": 29,
     "forfeit": false,
     "overtime": false
   },
@@ -1891,6 +2026,15 @@
   },
   {
     "date": "2026-11-24",
+    "team1": "Hurley",
+    "score1": 29,
+    "team2": "Purdy",
+    "score2": 59,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
     "team1": "Naylor",
     "score1": 50,
     "team2": "Puxico",
@@ -1918,10 +2062,28 @@
   },
   {
     "date": "2026-11-24",
+    "team1": "Clark County",
+    "score1": 46,
+    "team2": "Scotland County",
+    "score2": 57,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
     "team1": "Salisbury",
     "score1": 70,
     "team2": "South Callaway",
     "score2": 53,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
+    "team1": "Verona",
+    "score1": 11,
+    "team2": "Southwest (Washburn)",
+    "score2": 51,
     "forfeit": false,
     "overtime": false
   },
@@ -1967,6 +2129,15 @@
     "score1": 69,
     "team2": "St. Vincent",
     "score2": 27,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
+    "team1": "Plattsburg",
+    "score1": 29,
+    "team2": "Tarkio with Fairfax",
+    "score2": 53,
     "forfeit": false,
     "overtime": false
   },
@@ -2062,54 +2233,9 @@
   },
   {
     "date": "2026-11-24",
-    "team1": "West Platte",
-    "score1": null,
-    "team2": "Cameron",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
-    "team1": "Eldon",
-    "score1": null,
-    "team2": "Capital City",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
-    "team1": "Wellsville-Middletown",
-    "score1": null,
-    "team2": "Community",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
     "team1": "Normandy Collaborative",
     "score1": null,
     "team2": "Confluence Prep Academy Charter with Grand Center Arts Charter",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
-    "team1": "Everton",
-    "score1": null,
-    "team2": "Diamond",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
-    "team1": "Steelville",
-    "score1": null,
-    "team2": "Dixon",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -2134,15 +2260,6 @@
   },
   {
     "date": "2026-11-24",
-    "team1": "St. Dominic",
-    "score1": null,
-    "team2": "Helias Catholic",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
     "team1": "West Nodaway with Nodaway-Holt",
     "score1": null,
     "team2": "King City",
@@ -2155,15 +2272,6 @@
     "team1": "Canton",
     "score1": null,
     "team2": "Knox County",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
-    "team1": "Sherwood",
-    "score1": null,
-    "team2": "Lakeland",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -2206,24 +2314,6 @@
   },
   {
     "date": "2026-11-24",
-    "team1": "Brashear",
-    "score1": null,
-    "team2": "Milan",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
-    "team1": "Moberly",
-    "score1": null,
-    "team2": "Monroe City",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
     "team1": "Stanberry",
     "score1": null,
     "team2": "Mound City",
@@ -2236,24 +2326,6 @@
     "team1": "Affton",
     "score1": null,
     "team2": "Nerinx Hall",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
-    "team1": "Greenwood",
-    "score1": null,
-    "team2": "New Covenant Academy",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
-    "team1": "Cabool",
-    "score1": null,
-    "team2": "Niangua",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -2278,27 +2350,9 @@
   },
   {
     "date": "2026-11-24",
-    "team1": "Albany",
-    "score1": null,
-    "team2": "Northeast Nodaway",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
     "team1": "Polo",
     "score1": null,
     "team2": "Orrick",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
-    "team1": "Weaubleau",
-    "score1": null,
-    "team2": "Osceola",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -2323,36 +2377,9 @@
   },
   {
     "date": "2026-11-24",
-    "team1": "Savannah",
-    "score1": null,
-    "team2": "Platte County",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
-    "team1": "Hurley",
-    "score1": null,
-    "team2": "Purdy",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
     "team1": "Jennings",
     "score1": null,
     "team2": "Rosati-Kain",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
-    "team1": "Clark County",
-    "score1": null,
-    "team2": "Scotland County",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -2380,15 +2407,6 @@
     "team1": "Miller Career Academy",
     "score1": null,
     "team2": "STEAM Academy",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
-    "team1": "Plattsburg",
-    "score1": null,
-    "team2": "Tarkio with Fairfax",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -2431,9 +2449,45 @@
   },
   {
     "date": "2026-11-25",
+    "team1": "Greenwood",
+    "score1": 50,
+    "team2": "Crane",
+    "score2": 18,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-25",
+    "team1": "Halfway",
+    "score1": 50,
+    "team2": "Dadeville",
+    "score2": 53,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-25",
     "team1": "Wheaton",
-    "score1": null,
+    "score1": 56,
     "team2": "Everton",
+    "score2": 39,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-25",
+    "team1": "Southwest (Washburn)",
+    "score1": 44,
+    "team2": "Purdy",
+    "score2": 23,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-25",
+    "team1": "Diamond",
+    "score1": null,
+    "team2": "Blue Eye",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -2443,6 +2497,24 @@
     "team1": "Pleasant Hope",
     "score1": null,
     "team2": "Fair Play",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-25",
+    "team1": "Verona",
+    "score1": null,
+    "team2": "Hurley",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-25",
+    "team1": "New Covenant Academy",
+    "score1": null,
+    "team2": "Stockton",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -2458,9 +2530,9 @@
   },
   {
     "date": "2026-11-26",
-    "team1": "Wheaton",
+    "team1": "Diamond",
     "score1": null,
-    "team2": "Everton",
+    "team2": "Blue Eye",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -2470,6 +2542,24 @@
     "team1": "Pleasant Hope",
     "score1": null,
     "team2": "Fair Play",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-26",
+    "team1": "Verona",
+    "score1": null,
+    "team2": "Hurley",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-26",
+    "team1": "New Covenant Academy",
+    "score1": null,
+    "team2": "Stockton",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -2611,6 +2701,15 @@
   },
   {
     "date": "2026-11-30",
+    "team1": "Monett",
+    "score1": null,
+    "team2": "Cassville",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-30",
     "team1": "Central (Kansas City)",
     "score1": null,
     "team2": "Center",
@@ -2659,6 +2758,15 @@
     "team1": "Northwest (Hughesville)",
     "score1": null,
     "team2": "Concordia",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-30",
+    "team1": "Norwood",
+    "score1": null,
+    "team2": "Crane",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -2812,6 +2920,15 @@
     "team1": "Sheldon",
     "score1": null,
     "team2": "Hume",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-30",
+    "team1": "Spokane",
+    "score1": null,
+    "team2": "Hurley",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -3124,6 +3241,15 @@
   },
   {
     "date": "2026-11-30",
+    "team1": "Willow Springs",
+    "score1": null,
+    "team2": "Van Buren",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-30",
     "team1": "Veritas Christian Academy",
     "score1": null,
     "team2": "Villa Duchesne",
@@ -3361,6 +3487,24 @@
     "team1": "Troy Buchanan",
     "score1": null,
     "team2": "Hazelwood Central",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-12-01",
+    "team1": "Greenwood",
+    "score1": null,
+    "team2": "Houston",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-12-01",
+    "team1": "Hurley",
+    "score1": null,
+    "team2": "Humansville",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -5005,6 +5149,15 @@
   },
   {
     "date": "2026-12-07",
+    "team1": "Odessa",
+    "score1": null,
+    "team2": "Hogan Prep Academy Charter",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-12-07",
     "team1": "Monett",
     "score1": null,
     "team2": "Hollister",
@@ -5143,6 +5296,15 @@
     "team1": "Miller Career Academy",
     "score1": null,
     "team2": "Metro",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-12-07",
+    "team1": "Plattsburg",
+    "score1": null,
+    "team2": "Mid-Buchanan",
     "score2": null,
     "forfeit": false,
     "overtime": false

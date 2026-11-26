@@ -1,6 +1,5 @@
 date,problem,team1,score1,team2,score2,both_classified
 2026-11-19,no score,"Piggott(Piggott, AR)",,Holcomb,,False
-2026-11-20,no score,Greenwood,,Dora,,True
 2026-11-20,no score,Aurora,,"Glendale JV(Springfield, MO)",,False
 2026-11-20,no score,Monroe City,,Hannibal,,True
 2026-11-20,no score,John Burroughs,,Ladue Horton Watkins,,True
@@ -11,7 +10,6 @@ date,problem,team1,score1,team2,score2,both_classified
 2026-11-20,no score,Believe Acad Charter,,Providence Academy Sr.,,False
 2026-11-20,no score,Humansville,,School of the Ozarks,,True
 2026-11-20,no score,Ash Grove,,Spokane,,True
-2026-11-20,no score,Capital City,,St. James,,True
 2026-11-20,no score,Lift for Life Academy Charter,,"Union(Tulsa, OK)",,False
 2026-11-20,no score,Crossroads Prep Charter,,University Academy Charter,,False
 2026-11-20,no score,"Belleville East(Belleville, IL)",,University City,,False
@@ -25,16 +23,41 @@ date,problem,team1,score1,team2,score2,both_classified
 2026-11-22,no score,University City,,"Lincoln Prep(Kansas City, MO)",,False
 2026-11-22,no score,Cardinal Ritter,,"Springfield SE(Springfield , IL)",,False
 2026-11-23,no score,Bishop DuBourg,,Bayless,,True
-2026-11-23,no score,Maplewood-Richmond Hts.,,"Cahokia(Cahokia, IL)",,False
-2026-11-23,no score,Norwood,,Fair Grove,,True
 2026-11-23,no score,Sikeston,,Farmington,,True
 2026-11-23,no score,Pilot Grove,,Fayette,,True
 2026-11-23,no score,Grundy County with Newtown-Harris,,Linn County,,True
 2026-11-23,no score,Macon County with Bucklin,,Marceline,,True
-2026-11-23,no score,Sarcoxie,,Monett,,True
-2026-11-23,no score,Greenwood,,Pleasant Hope,,True
 2026-11-23,no score,Cainsville with Ridgeway,,Princeton,,True
 2026-11-23,no score,Northeast Vernon County,,Rich Hill,,True
-2026-11-23,no score,Van Buren,,Valley with Bismarck,,True
 2026-11-23,no score,Hallsville,,Warrenton,,True
 2026-11-23,no score,Fredericktown,,Woodland,,True
+2026-11-24,no score,Crest Ridge,,Adrian,,True
+2026-11-24,no score,St. Pius X (Festus),,Arcadia Valley,,True
+2026-11-24,no score,Russellville,,Blair Oaks,,True
+2026-11-24,no score,Lighthouse Sr. High,,Buffalo,,False
+2026-11-24,no score,Normandy Collaborative,,Confluence Prep Academy Charter with Grand Center Arts Charter,,True
+2026-11-24,no score,Pattonsburg,,Gallatin,,True
+2026-11-24,no score,Hancock,,Gateway Science Charter,,True
+2026-11-24,no score,West Nodaway with Nodaway-Holt,,King City,,True
+2026-11-24,no score,Canton,,Knox County,,True
+2026-11-24,no score,Marquette,,Lindbergh,,True
+2026-11-24,no score,Northwestern (Mendon) with Keytesville,,Macon County with Bucklin,,True
+2026-11-24,no score,Winston with North Daviess,,Maysville,,True
+2026-11-24,no score,Liberal,,McAuley Catholic with Jasper,,True
+2026-11-24,no score,Brentwood,,McCluer North,,False
+2026-11-24,no score,Stanberry,,Mound City,,True
+2026-11-24,no score,Affton,,Nerinx Hall,,True
+2026-11-24,no score,North Nodaway,,North Harrison,,True
+2026-11-24,no score,Timberland,,North Point,,True
+2026-11-24,no score,Polo,,Orrick,,True
+2026-11-24,no score,Parkway South,,Parkway North,,True
+2026-11-24,no score,Parkway Central,,Parkway West,,True
+2026-11-24,no score,Jennings,,Rosati-Kain,,True
+2026-11-24,no score,New Heights Christian,,RUSH Sr. Home School,,False
+2026-11-24,no score,Northwest (Hughesville),,Slater with Malta Bend,,True
+2026-11-24,no score,St. Charles,,St. Charles West,,True
+2026-11-24,no score,Miller Career Academy,,STEAM Academy,,True
+2026-11-24,no score,Butler,,Tipton,,True
+2026-11-24,no score,East Buchanan,,Trenton,,True
+2026-11-24,no score,Belle,,Tuscumbia,,True
+2026-11-24,no score,Fox,,Westminster Christian Academy,,True
