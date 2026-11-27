@@ -1,5 +1,5 @@
 {
-  "last_updated": "November 26, 2026 at 09:10 AM",
+  "last_updated": "November 27, 2026 at 09:10 AM",
   "league_average": 44.64,
   "classification": 4,
   "teams": [
@@ -26,6 +26,19 @@
       "off_rank": 2,
       "def_rating": -2.65,
       "def_rank": 2,
+      "games": 3,
+      "current_weight": 0.375
+    },
+    {
+      "ovr_rank": 3,
+      "school": "Gateway Science Charter",
+      "classification": 4,
+      "district": 4,
+      "ovr_rating": -13.36,
+      "off_rating": -9.08,
+      "off_rank": 3,
+      "def_rating": -4.28,
+      "def_rank": 3,
       "games": 3,
       "current_weight": 0.375
     }

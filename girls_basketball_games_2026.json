@@ -730,6 +730,15 @@
   },
   {
     "date": "2026-11-21",
+    "team1": "Lutheran St. Charles",
+    "score1": 70,
+    "team2": "Hazelwood West",
+    "score2": 49,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-21",
     "team1": "Laquey",
     "score1": 21,
     "team2": "Higbee",
@@ -922,15 +931,6 @@
     "team1": "Lafayette (Wildwood)",
     "score1": null,
     "team2": "Farmington",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-21",
-    "team1": "Lutheran St. Charles",
-    "score1": null,
-    "team2": "Hazelwood West",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -1540,6 +1540,15 @@
   },
   {
     "date": "2026-11-24",
+    "team1": "St. Pius X (Festus)",
+    "score1": 49,
+    "team2": "Arcadia Valley",
+    "score2": 50,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
     "team1": "Alton",
     "score1": 39,
     "team2": "Bakersfield",
@@ -1729,6 +1738,15 @@
   },
   {
     "date": "2026-11-24",
+    "team1": "Gateway Science Charter",
+    "score1": 64,
+    "team2": "Hancock",
+    "score2": 19,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
     "team1": "St. Dominic",
     "score1": 74,
     "team2": "Helias Catholic",
@@ -1787,6 +1805,15 @@
     "score1": 62,
     "team2": "Jefferson (Conception) with South Nodaway",
     "score2": 42,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
+    "team1": "West Nodaway with Nodaway-Holt",
+    "score1": 36,
+    "team2": "King City",
+    "score2": 45,
     "forfeit": false,
     "overtime": false
   },
@@ -2179,6 +2206,15 @@
   },
   {
     "date": "2026-11-24",
+    "team1": "Fox",
+    "score1": 31,
+    "team2": "Westminster Christian Academy",
+    "score2": 23,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-24",
     "team1": "South Shelby",
     "score1": 54,
     "team2": "Westran",
@@ -2215,15 +2251,6 @@
   },
   {
     "date": "2026-11-24",
-    "team1": "St. Pius X (Festus)",
-    "score1": null,
-    "team2": "Arcadia Valley",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
     "team1": "Russellville",
     "score1": null,
     "team2": "Blair Oaks",
@@ -2245,24 +2272,6 @@
     "team1": "Pattonsburg",
     "score1": null,
     "team2": "Gallatin",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
-    "team1": "Hancock",
-    "score1": null,
-    "team2": "Gateway Science Charter",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-24",
-    "team1": "West Nodaway with Nodaway-Holt",
-    "score1": null,
-    "team2": "King City",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -2439,11 +2448,11 @@
     "overtime": false
   },
   {
-    "date": "2026-11-24",
-    "team1": "Fox",
-    "score1": null,
-    "team2": "Westminster Christian Academy",
-    "score2": null,
+    "date": "2026-11-25",
+    "team1": "Diamond",
+    "score1": 25,
+    "team2": "Blue Eye",
+    "score2": 61,
     "forfeit": false,
     "overtime": false
   },
@@ -2485,10 +2494,10 @@
   },
   {
     "date": "2026-11-25",
-    "team1": "Diamond",
-    "score1": null,
-    "team2": "Blue Eye",
-    "score2": null,
+    "team1": "New Covenant Academy",
+    "score1": 54,
+    "team2": "Stockton",
+    "score2": 48,
     "forfeit": false,
     "overtime": false
   },
@@ -2512,60 +2521,6 @@
   },
   {
     "date": "2026-11-25",
-    "team1": "New Covenant Academy",
-    "score1": null,
-    "team2": "Stockton",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-25",
-    "team1": "Metro",
-    "score1": null,
-    "team2": "Visitation Academy",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-26",
-    "team1": "Diamond",
-    "score1": null,
-    "team2": "Blue Eye",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-26",
-    "team1": "Pleasant Hope",
-    "score1": null,
-    "team2": "Fair Play",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-26",
-    "team1": "Verona",
-    "score1": null,
-    "team2": "Hurley",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-26",
-    "team1": "New Covenant Academy",
-    "score1": null,
-    "team2": "Stockton",
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-26",
     "team1": "Metro",
     "score1": null,
     "team2": "Visitation Academy",
@@ -2737,9 +2692,27 @@
   },
   {
     "date": "2026-11-30",
+    "team1": "Smithville",
+    "score1": null,
+    "team2": "Chillicothe",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-30",
     "team1": "Marquette",
     "score1": null,
     "team2": "Clayton",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-30",
+    "team1": "Skyline",
+    "score1": null,
+    "team2": "Clever",
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -3028,6 +3001,15 @@
     "team1": "Winston with North Daviess",
     "score1": null,
     "team2": "Maysville",
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-30",
+    "team1": "Northwestern (Mendon) with Keytesville",
+    "score1": null,
+    "team2": "Meadville",
     "score2": null,
     "forfeit": false,
     "overtime": false
