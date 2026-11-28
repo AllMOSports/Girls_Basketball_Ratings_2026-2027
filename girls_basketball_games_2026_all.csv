@@ -57,6 +57,7 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-11-20,Cabool,True,25,Plato,True,64,False,False
 2026-11-20,Clearwater,True,40,Puxico,True,70,False,False
 2026-11-20,New Covenant Academy,True,72,Sarcoxie,True,36,False,False
+2026-11-20,Humansville,True,33,School of the Ozarks,True,27,False,False
 2026-11-20,Rolla,True,59,Seckman,True,15,False,False
 2026-11-20,Midway,True,40,Sherwood,True,48,False,False
 2026-11-20,Prairie Home,True,47,Slater with Malta Bend,True,38,False,False
@@ -77,7 +78,6 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-11-20,Santa Fe,True,,Otterville,True,,False,False
 2026-11-20,Kennett,True,,"Paragould(Paragould, AR)",False,,False,False
 2026-11-20,Believe Acad Charter,True,,Providence Academy Sr.,False,,False,False
-2026-11-20,Humansville,True,,School of the Ozarks,True,,False,False
 2026-11-20,Ash Grove,True,,Spokane,True,,False,False
 2026-11-20,Lift for Life Academy Charter,True,,"Union(Tulsa, OK)",False,,False,False
 2026-11-20,Crossroads Prep Charter,False,,University Academy Charter,True,,False,False
@@ -307,7 +307,10 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-11-25,Pleasant Hope,True,,Fair Play,True,,False,False
 2026-11-25,Verona,True,,Hurley,True,,False,False
 2026-11-25,Metro,True,,Visitation Academy,True,,False,False
-2026-11-27,Van Buren,True,,Greenville,True,,False,False
+2026-11-26,Pleasant Hope,True,,Fair Play,True,,False,False
+2026-11-26,Verona,True,,Hurley,True,,False,False
+2026-11-26,Metro,True,,Visitation Academy,True,,False,False
+2026-11-27,Van Buren,True,64,Greenville,True,49,False,False
 2026-11-27,St. Joseph's Academy,True,,Rock Bridge,True,,False,False
 2026-11-28,St. Joseph's Academy,True,,Battle,True,,False,False
 2026-11-28,Central (New Madrid County),True,,Bloomfield with Richland (Essex),True,,False,False
@@ -371,6 +374,7 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-11-30,Chilhowee,True,,Montrose with Ballard,True,,False,False
 2026-11-30,Fort Osage,True,,North Kansas City,True,,False,False
 2026-11-30,West Nodaway with Nodaway-Holt,True,,North Nodaway,True,,False,False
+2026-11-30,St. Joseph Christian,True,,Northeast Nodaway,True,,False,False
 2026-11-30,Delta,True,,Oak Ridge,True,,False,False
 2026-11-30,St. Joseph's Academy,True,,Orchard Farm,True,,False,False
 2026-11-30,Versailles,True,,Osage,True,,False,False
@@ -485,6 +489,7 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-12-01,Washington,True,,Union,True,,False,False
 2026-12-01,Cuba,True,,Vienna,True,,False,False
 2026-12-01,Veritas Christian Academy,True,,Visitation Academy,True,,False,False
+2026-12-01,Lebanon,True,,Waynesville,True,,False,False
 2026-12-01,"Rogers Heritage(Rogers, AR)",False,,Webb City,True,,False,False
 2026-12-01,Principia,True,,Westminster Christian Academy,True,,False,False
 2026-12-01,Neosho,True,,Willard,True,,False,False
@@ -911,7 +916,6 @@ date,team1,team1_classified,score1,team2,team2_classified,score2,forfeit,overtim
 2026-12-10,Chilhowee,True,,Green Ridge,True,,False,False
 2026-12-10,Green City,True,,Grundy County with Newtown-Harris,True,,False,False
 2026-12-10,Gainesville,True,,Hartville,True,,False,False
-2026-12-10,St. Charles West,True,,Hazelwood West,True,,False,False
 2026-12-10,Novinger,True,,Heartland (Bethel) Sr.,False,,False,False
 2026-12-10,Niangua,True,,Hurley,True,,False,False
 2026-12-10,Mehlville,True,,John Burroughs,True,,False,False

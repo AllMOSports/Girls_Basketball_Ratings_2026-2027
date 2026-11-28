@@ -52,6 +52,7 @@ date,team1,score1,team2,score2,forfeit,overtime
 2026-11-20,Cabool,25,Plato,64,False,False
 2026-11-20,Clearwater,40,Puxico,70,False,False
 2026-11-20,New Covenant Academy,72,Sarcoxie,36,False,False
+2026-11-20,Humansville,33,School of the Ozarks,27,False,False
 2026-11-20,Rolla,59,Seckman,15,False,False
 2026-11-20,Midway,40,Sherwood,48,False,False
 2026-11-20,Prairie Home,47,Slater with Malta Bend,38,False,False
@@ -69,7 +70,6 @@ date,team1,score1,team2,score2,forfeit,overtime
 2026-11-20,Montrose with Ballard,,Lakeland,,False,False
 2026-11-20,Lincoln College Prep,,Notre Dame de Sion,,False,False
 2026-11-20,Santa Fe,,Otterville,,False,False
-2026-11-20,Humansville,,School of the Ozarks,,False,False
 2026-11-20,Ash Grove,,Spokane,,False,False
 2026-11-21,Perryville,39,Arcadia Valley,51,False,False
 2026-11-21,Springfield Catholic,50,Aurora,16,False,False
@@ -280,7 +280,10 @@ date,team1,score1,team2,score2,forfeit,overtime
 2026-11-25,Pleasant Hope,,Fair Play,,False,False
 2026-11-25,Verona,,Hurley,,False,False
 2026-11-25,Metro,,Visitation Academy,,False,False
-2026-11-27,Van Buren,,Greenville,,False,False
+2026-11-26,Pleasant Hope,,Fair Play,,False,False
+2026-11-26,Verona,,Hurley,,False,False
+2026-11-26,Metro,,Visitation Academy,,False,False
+2026-11-27,Van Buren,64,Greenville,49,False,False
 2026-11-27,St. Joseph's Academy,,Rock Bridge,,False,False
 2026-11-28,St. Joseph's Academy,,Battle,,False,False
 2026-11-28,Central (New Madrid County),,Bloomfield with Richland (Essex),,False,False
@@ -338,6 +341,7 @@ date,team1,score1,team2,score2,forfeit,overtime
 2026-11-30,Chilhowee,,Montrose with Ballard,,False,False
 2026-11-30,Fort Osage,,North Kansas City,,False,False
 2026-11-30,West Nodaway with Nodaway-Holt,,North Nodaway,,False,False
+2026-11-30,St. Joseph Christian,,Northeast Nodaway,,False,False
 2026-11-30,Delta,,Oak Ridge,,False,False
 2026-11-30,St. Joseph's Academy,,Orchard Farm,,False,False
 2026-11-30,Versailles,,Osage,,False,False
@@ -441,6 +445,7 @@ date,team1,score1,team2,score2,forfeit,overtime
 2026-12-01,Washington,,Union,,False,False
 2026-12-01,Cuba,,Vienna,,False,False
 2026-12-01,Veritas Christian Academy,,Visitation Academy,,False,False
+2026-12-01,Lebanon,,Waynesville,,False,False
 2026-12-01,Principia,,Westminster Christian Academy,,False,False
 2026-12-01,Neosho,,Willard,,False,False
 2026-12-02,Willard,,Carl Junction,,False,False
@@ -776,7 +781,6 @@ date,team1,score1,team2,score2,forfeit,overtime
 2026-12-10,Chilhowee,,Green Ridge,,False,False
 2026-12-10,Green City,,Grundy County with Newtown-Harris,,False,False
 2026-12-10,Gainesville,,Hartville,,False,False
-2026-12-10,St. Charles West,,Hazelwood West,,False,False
 2026-12-10,Niangua,,Hurley,,False,False
 2026-12-10,Mehlville,,John Burroughs,,False,False
 2026-12-10,Platte County,,Kearney,,False,False

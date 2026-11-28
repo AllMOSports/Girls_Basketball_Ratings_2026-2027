@@ -8,7 +8,6 @@ date,problem,team1,score1,team2,score2,both_classified
 2026-11-20,no score,Santa Fe,,Otterville,,True
 2026-11-20,no score,Kennett,,"Paragould(Paragould, AR)",,False
 2026-11-20,no score,Believe Acad Charter,,Providence Academy Sr.,,False
-2026-11-20,no score,Humansville,,School of the Ozarks,,True
 2026-11-20,no score,Ash Grove,,Spokane,,True
 2026-11-20,no score,Lift for Life Academy Charter,,"Union(Tulsa, OK)",,False
 2026-11-20,no score,Crossroads Prep Charter,,University Academy Charter,,False
@@ -58,3 +57,6 @@ date,problem,team1,score1,team2,score2,both_classified
 2026-11-25,no score,Pleasant Hope,,Fair Play,,True
 2026-11-25,no score,Verona,,Hurley,,True
 2026-11-25,no score,Metro,,Visitation Academy,,True
+2026-11-26,no score,Pleasant Hope,,Fair Play,,True
+2026-11-26,no score,Verona,,Hurley,,True
+2026-11-26,no score,Metro,,Visitation Academy,,True

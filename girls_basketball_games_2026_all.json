@@ -639,6 +639,17 @@
   },
   {
     "date": "2026-11-20",
+    "team1": "Humansville",
+    "team1_classified": true,
+    "score1": 33,
+    "team2": "School of the Ozarks",
+    "team2_classified": true,
+    "score2": 27,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-20",
     "team1": "Rolla",
     "team1_classified": true,
     "score1": 59,
@@ -853,17 +864,6 @@
     "score1": null,
     "team2": "Providence Academy Sr.",
     "team2_classified": false,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-11-20",
-    "team1": "Humansville",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "School of the Ozarks",
-    "team2_classified": true,
     "score2": null,
     "forfeit": false,
     "overtime": false
@@ -3388,13 +3388,46 @@
     "overtime": false
   },
   {
+    "date": "2026-11-26",
+    "team1": "Pleasant Hope",
+    "team1_classified": true,
+    "score1": null,
+    "team2": "Fair Play",
+    "team2_classified": true,
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-26",
+    "team1": "Verona",
+    "team1_classified": true,
+    "score1": null,
+    "team2": "Hurley",
+    "team2_classified": true,
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-26",
+    "team1": "Metro",
+    "team1_classified": true,
+    "score1": null,
+    "team2": "Visitation Academy",
+    "team2_classified": true,
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
     "date": "2026-11-27",
     "team1": "Van Buren",
     "team1_classified": true,
-    "score1": null,
+    "score1": 64,
     "team2": "Greenville",
     "team2_classified": true,
-    "score2": null,
+    "score2": 49,
     "forfeit": false,
     "overtime": false
   },
@@ -4086,6 +4119,17 @@
     "team1_classified": true,
     "score1": null,
     "team2": "North Nodaway",
+    "team2_classified": true,
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-11-30",
+    "team1": "St. Joseph Christian",
+    "team1_classified": true,
+    "score1": null,
+    "team2": "Northeast Nodaway",
     "team2_classified": true,
     "score2": null,
     "forfeit": false,
@@ -5340,6 +5384,17 @@
     "team1_classified": true,
     "score1": null,
     "team2": "Visitation Academy",
+    "team2_classified": true,
+    "score2": null,
+    "forfeit": false,
+    "overtime": false
+  },
+  {
+    "date": "2026-12-01",
+    "team1": "Lebanon",
+    "team1_classified": true,
+    "score1": null,
+    "team2": "Waynesville",
     "team2_classified": true,
     "score2": null,
     "forfeit": false,
@@ -10026,17 +10081,6 @@
     "team1_classified": true,
     "score1": null,
     "team2": "Hartville",
-    "team2_classified": true,
-    "score2": null,
-    "forfeit": false,
-    "overtime": false
-  },
-  {
-    "date": "2026-12-10",
-    "team1": "St. Charles West",
-    "team1_classified": true,
-    "score1": null,
-    "team2": "Hazelwood West",
     "team2_classified": true,
     "score2": null,
     "forfeit": false,

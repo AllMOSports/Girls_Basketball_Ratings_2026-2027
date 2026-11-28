@@ -1,6 +1,6 @@
 {
-  "last_updated": "November 27, 2026 at 09:10 AM",
-  "league_average": 44.64,
+  "last_updated": "November 28, 2026 at 09:10 AM",
+  "league_average": 44.63,
   "classification": 3,
   "teams": [
     {
@@ -9,9 +9,9 @@
       "classification": 3,
       "district": 6,
       "ovr_rating": 7.12,
-      "off_rating": 4.77,
+      "off_rating": 4.78,
       "off_rank": 2,
-      "def_rating": 2.35,
+      "def_rating": 2.34,
       "def_rank": 3,
       "games": 3,
       "current_weight": 0.375
@@ -50,7 +50,7 @@
       "ovr_rating": 2.24,
       "off_rating": -1.55,
       "off_rank": 5,
-      "def_rating": 3.79,
+      "def_rating": 3.78,
       "def_rank": 2,
       "games": 3,
       "current_weight": 0.375
